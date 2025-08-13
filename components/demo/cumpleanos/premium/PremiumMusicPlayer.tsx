@@ -15,22 +15,25 @@ export function PremiumMusicPlayer({ data }: PremiumMusicPlayerProps) {
   // Usar datos de escaramuza o fallback
   const musicData = useMemo(() => data?.music || {
     title: "Serenata para la Pequeña Jinete",
-    tracks: [
-      {
-        name: "Vals de las Rosas",
-        artist: "Mariachi Infantil de Lluvia Marina",
-        file: "/music/feel-good1.mp3"
-      }
-    ]
+    track: "/music/feel-good1.mp3"
   }, [data?.music])
 
   // Inicializar audio y event listeners solo en cliente
   useEffect(() => {
     if (!isClient) return
 
-    // Usar la primera canción de la lista de escaramuza
-    const firstTrack = musicData.tracks[0]?.file || "/music/feel-good1.mp3"
-    audioRef.current = new Audio(firstTrack)
+    // Manejar tanto estructura 'track' (string) como 'tracks' (array)
+    let trackFile = "/music/feel-good1.mp3"
+    
+    if (musicData.track) {
+      // Estructura simple: { track: "archivo.mp3" }
+      trackFile = musicData.track
+    } else if (musicData.tracks && musicData.tracks.length > 0) {
+      // Estructura array: { tracks: [{ file: "archivo.mp3" }] }
+      trackFile = musicData.tracks[0].file
+    }
+    
+    audioRef.current = new Audio(trackFile)
     audioRef.current.loop = true
 
     const handleUserInteraction = () => {
@@ -40,7 +43,7 @@ export function PremiumMusicPlayer({ data }: PremiumMusicPlayerProps) {
         ?.play()
         .then(() => {
           setIsPlaying(true)
-          console.log("🌹 Música elegante iniciada correctamente:", firstTrack)
+          console.log("🌹 Música elegante iniciada correctamente:", trackFile)
         })
         .catch((error) => {
           console.error("❌ Error playing elegant audio:", error)

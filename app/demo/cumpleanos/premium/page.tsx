@@ -30,7 +30,7 @@ export default function PremiumCumpleanosDemoPage() {
       <PremiumGallery />
       
       {/* Reproductor de música */}
-      <PremiumMusicPlayer />
+      <PremiumMusicPlayer data={premiumDemoData} />
       
       {/* Cronograma del evento */}
       {/* <PremiumTimeline /> */}

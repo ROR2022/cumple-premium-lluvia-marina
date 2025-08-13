@@ -116,10 +116,10 @@ export const lluviaMariaEscaramuzaData = {
     title: "Serenata para la Pequeña Jinete",
     tracks: [
       {
-        name: "Vals de las Rosas",
-        artist: "Mariachi Infantil de Lluvia Marina",
+        name: "La Bikina",
+        artist: "Mariachi Tradicional de Lluvia Marina",
         duration: "3:30",
-        file: "/music/feel-good1.mp3"
+        file: "/music/bikina.mp3"
       },
       {
         name: "Canción de la Pequeña Escaramuza",

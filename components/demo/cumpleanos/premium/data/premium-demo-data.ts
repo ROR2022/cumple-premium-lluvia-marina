@@ -102,7 +102,7 @@ export const premiumDemoData = {
   // Música western personalizada
   music: {
     title: "Música Western",
-    track: "/music/regalo.mp3",
+    track: "/music/bikina.mp3",
     autoplay: false,
     loop: true,
     description: "Música especial para Sheriff Lluvia Marina"
