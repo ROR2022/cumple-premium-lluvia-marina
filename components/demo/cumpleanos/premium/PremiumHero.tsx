@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image'
+import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
 
 interface PremiumHeroProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -68,15 +69,15 @@ export function PremiumHero({ data }: PremiumHeroProps) {
               </h3>
               <div className="space-y-3 text-lg">
                 <div className="flex items-center space-x-3">
-                  <span className="w-3 h-3 bg-[var(--charra-magenta)] rounded-full animate-pulse"></span>
+                  <LluviaDecoration type="vineta1" size="sm" animation="pulse" />
                   <span><span className="text-[var(--charra-blush)] font-bold">Nombre:</span> {event?.celebrant?.name || "Lluvia Marina Rodríguez"}</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <span className="w-3 h-3 bg-[var(--charra-emerald)] rounded-full animate-pulse delay-300"></span>
+                  <LluviaDecoration type="rueda1" size="sm" animation="pulse" delay="300" />
                   <span><span className="text-[var(--charra-blush)] font-bold">Edad:</span> {event?.celebrant?.age || "3 años"}</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <span className="w-3 h-3 bg-[var(--charra-burgundy)] rounded-full animate-pulse delay-500"></span>
+                  <LluviaDecoration type="vineta2" size="sm" animation="pulse" delay="500" />
                   <span><span className="text-[var(--charra-background)] font-bold">Origen:</span> {event?.celebrant?.birthDate || "11 de Agosto de 2022"}</span>
                 </div>
               </div>
@@ -87,24 +88,45 @@ export function PremiumHero({ data }: PremiumHeroProps) {
         </div>
 
         {/* Elementos decorativos modernos elegantes */}
-        <div className="absolute top-10 left-10 text-6xl animate-bounce">
-          💜
-        </div>
-        <div className="absolute top-20 right-10 text-5xl animate-spin-slow">
-          💎
-        </div>
-        <div className="absolute bottom-20 left-20 text-6xl animate-pulse">
-          🦄
-        </div>
-        <div className="absolute bottom-10 right-20 text-5xl animate-bounce delay-1000">
-          ✨
-        </div>
-        <div className="absolute top-1/2 left-10 text-4xl animate-pulse delay-700">
-          �
-        </div>
-        <div className="absolute top-1/2 right-10 text-4xl animate-bounce delay-300">
-          �
-        </div>
+        <FloatingLluviaDecoration 
+          type="rueda1" 
+          size="xxl" 
+          animation="bounce" 
+          position="top-10 left-10"
+        />
+        <FloatingLluviaDecoration 
+          type="vineta1" 
+          size="xl" 
+          animation="spin-slow" 
+          position="top-20 right-10"
+        />
+        <FloatingLluviaDecoration 
+          type="rueda2" 
+          size="xxl" 
+          animation="pulse" 
+          position="bottom-20 left-20"
+        />
+        <FloatingLluviaDecoration 
+          type="vineta2" 
+          size="xl" 
+          animation="bounce" 
+          position="bottom-10 right-20"
+          delay="1000"
+        />
+        <FloatingLluviaDecoration 
+          type="rueda1" 
+          size="lg" 
+          animation="pulse" 
+          position="top-1/2 left-10"
+          delay="700"
+        />
+        <FloatingLluviaDecoration 
+          type="rueda2" 
+          size="lg" 
+          animation="bounce" 
+          position="top-1/2 right-10"
+          delay="300"
+        />
       </div>
 
       {/* Indicador de scroll moderno */}

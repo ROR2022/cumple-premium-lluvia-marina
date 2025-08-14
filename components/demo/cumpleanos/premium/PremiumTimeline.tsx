@@ -1,11 +1,27 @@
 "use client"
 
+import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
+
 interface PremiumTimelineProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any
 }
 
 export function PremiumTimeline({ data }: PremiumTimelineProps) {
+  // Función para mapear emojis a nuestras decoraciones
+  const getIconDecoration = (iconEmoji: string) => {
+    switch (iconEmoji) {
+      case "🐎":
+        return <LluviaDecoration type="rueda1" size="md" animation="bounce" />
+      case "👑":
+        return <LluviaDecoration type="rueda2" size="md" animation="pulse" />
+      case "✨":
+        return <LluviaDecoration type="vineta1" size="md" animation="spin-slow" />
+      default:
+        return <LluviaDecoration type="vineta2" size="md" animation="bounce" />
+    }
+  }
+
   // Usar datos pasados o fallback elegante
   const timelineEvents = data?.timeline || [
     {
@@ -81,7 +97,7 @@ export function PremiumTimeline({ data }: PremiumTimelineProps) {
               <div key={index} className="relative flex items-start">
                 {/* Punto en la línea */}
                 <div className="relative z-10 flex items-center justify-center w-16 h-16 bg-white rounded-full border-4 border-charra-burgundy shadow-lg">
-                  <span className="text-2xl">{event.icon}</span>
+                  {getIconDecoration(event.icon)}
                 </div>
                 
                 {/* Contenido del evento */}

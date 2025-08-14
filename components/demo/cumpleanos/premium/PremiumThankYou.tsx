@@ -2,6 +2,7 @@
 
 import { Heart } from 'lucide-react'
 import { premiumDemoData } from './data/premium-demo-data'
+import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
 
 interface InvitationData {
   event?: {
@@ -57,10 +58,10 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
               <h3 className="text-3xl md:text-4xl font-black mb-4" style={{ color: 'var(--charra-primary)' }}>
                 � ¡Un millón de gracias! �
               </h3>
-              <div className="flex justify-center gap-4 mb-6">
-                <span className="text-4xl animate-bounce">✨</span>
-                <span className="text-4xl animate-bounce delay-100">💖</span>
-                <span className="text-4xl animate-bounce delay-200">🎉</span>
+              <div className="flex justify-center gap-2 md:gap-4 mb-6">
+                <LluviaDecoration type="vineta1" size="md" animation="bounce" className="md:w-12 md:h-12" />
+                <LluviaDecoration type="rueda1" size="md" animation="bounce" delay="100" className="md:w-12 md:h-12" />
+                <LluviaDecoration type="vineta2" size="md" animation="bounce" delay="200" className="md:w-12 md:h-12" />
               </div>
             </div>
 
@@ -91,7 +92,9 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
                 background: 'var(--charra-background)', 
                 borderColor: 'var(--charra-accent)' 
               }}>
-                <div className="text-3xl mb-3">🎁</div>
+                <div className="flex justify-center mb-3">
+                  <LluviaDecoration type="rueda1" size="md" animation="pulse" />
+                </div>
                 <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por los regalos hermosos</h5>
                 <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
                   Cada detalle fue elegido con tanto amor. Los juguetes modernos, la ropa preciosa, 
@@ -103,7 +106,9 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
                 background: 'var(--charra-gradient-accent)', 
                 borderColor: 'var(--charra-highlight)' 
               }}>
-                <div className="text-3xl mb-3">👥</div>
+                <div className="flex justify-center mb-3">
+                  <LluviaDecoration type="vineta1" size="md" animation="pulse" />
+                </div>
                 <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por su hermosa presencia</h5>
                 <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
                   Ver a todos nuestros seres queridos reunidos para celebrar a Lluvia Marina 
@@ -115,7 +120,9 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
                 background: 'var(--charra-gradient-background)', 
                 borderColor: 'var(--charra-accent)' 
               }}>
-                <div className="text-3xl mb-3">📸</div>
+                <div className="flex justify-center mb-3">
+                  <LluviaDecoration type="rueda2" size="md" animation="pulse" />
+                </div>
                 <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por los momentos capturados</h5>
                 <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
                   Las fotos, los videos, las risas compartidas... cada recuerdo quedó 
@@ -127,7 +134,9 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
                 background: 'var(--charra-background)', 
                 borderColor: 'var(--charra-accent)' 
               }}>
-                <div className="text-3xl mb-3">🎉</div>
+                <div className="flex justify-center mb-3">
+                  <LluviaDecoration type="vineta2" size="md" animation="pulse" />
+                </div>
                 <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por la alegría compartida</h5>
                 <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
                   Los juegos, los bailes, la diversión moderna... ¡todos se divirtieron 
@@ -168,19 +177,25 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
           
           <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div className="bg-pink-50 rounded-lg p-4">
-              <div className="text-3xl mb-2">🎂</div>
+              <div className="flex justify-center mb-2">
+                <LluviaDecoration type="rueda1" size="md" animation="bounce" />
+              </div>
               <h5 className="font-bold text-pink-800">Los 4 años</h5>
               <p className="text-sm text-pink-700">¡Nos vemos el próximo año!</p>
             </div>
             
             <div className="bg-green-50 rounded-lg p-4">
-              <div className="text-3xl mb-2">🤝</div>
+              <div className="flex justify-center mb-2">
+                <LluviaDecoration type="vineta1" size="md" animation="bounce" />
+              </div>
               <h5 className="font-bold text-green-800">Siempre unidos</h5>
               <p className="text-sm text-green-700">¡La familia Marmolejo Quintanar crece!</p>
             </div>
             
             <div className="bg-purple-50 rounded-lg p-4">
-              <div className="text-3xl mb-2">💝</div>
+              <div className="flex justify-center mb-2">
+                <LluviaDecoration type="rueda2" size="md" animation="bounce" />
+              </div>
               <h5 className="font-bold text-purple-800">Con todo nuestro amor</h5>
               <p className="text-sm text-purple-700">¡Gracias por todo!</p>
             </div>
@@ -200,9 +215,27 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
         <div className="mt-8 relative overflow-hidden bg-gradient-to-br from-pink-800 via-pink-700 to-purple-800 rounded-3xl p-8 md:p-12 mb-8 shadow-2xl">
           {/* Efectos de fondo decorativos */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-4 right-4 text-6xl">🐎</div>
-            <div className="absolute bottom-4 left-4 text-4xl">✨</div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl opacity-5">💖</div>
+            <FloatingLluviaDecoration 
+              type="rueda1" 
+              size="xxl" 
+              animation="pulse" 
+              position="top-4 right-4"
+              opacity="opacity-20"
+            />
+            <FloatingLluviaDecoration 
+              type="vineta2" 
+              size="xl" 
+              animation="bounce" 
+              position="bottom-4 left-4"
+              opacity="opacity-30"
+            />
+            <FloatingLluviaDecoration 
+              type="rueda2" 
+              size="xxl" 
+              animation="pulse" 
+              position="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              opacity="opacity-10"
+            />
           </div>
           
           {/* Contenido principal */}

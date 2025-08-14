@@ -1,6 +1,7 @@
 "use client"
 
 import { Crown, Heart } from 'lucide-react'
+import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
 
 interface InvitationData {
   event?: {
@@ -162,7 +163,9 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
                 background: 'var(--charra-background)', 
                 borderColor: 'var(--charra-accent)' 
               }}>
-                <div className="text-3xl mb-2">👥</div>
+                <div className="flex justify-center mb-2">
+                  <LluviaDecoration type="vineta1" size="md" animation="pulse" />
+                </div>
                 <h4 className="font-bold mb-1" style={{ color: 'var(--charra-primary)' }}>Familia Especial</h4>
                 <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>Los que siempre están ahí</p>
               </div>
@@ -171,7 +174,9 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
                 background: 'var(--charra-gradient-accent)', 
                 borderColor: 'var(--charra-highlight)' 
               }}>
-                <div className="text-3xl mb-2">💝</div>
+                <div className="flex justify-center mb-2">
+                  <LluviaDecoration type="rueda1" size="md" animation="bounce" />
+                </div>
                 <h4 className="font-bold mb-1" style={{ color: 'var(--charra-primary)' }}>Amigos del Alma</h4>
                 <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>Los que hacen reír siempre</p>
               </div>
@@ -180,7 +185,9 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
                 background: 'var(--charra-background)', 
                 borderColor: 'var(--charra-accent)' 
               }}>
-                <div className="text-3xl mb-2">🌟</div>
+                <div className="flex justify-center mb-2">
+                  <LluviaDecoration type="vineta2" size="md" animation="spin-slow" />
+                </div>
                 <h4 className="font-bold mb-1" style={{ color: 'var(--charra-primary)' }}>Padrinos Queridos</h4>
                 <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>Los guías de esta celebración</p>
               </div>

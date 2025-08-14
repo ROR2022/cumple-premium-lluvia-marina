@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Camera, ChevronLeft, ChevronRight, X } from 'lucide-react'
+import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
 
 interface GalleryCategory {
   name: string
@@ -83,7 +84,7 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
         {/* Título elegante */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center space-x-3 mb-4">
-            <span className="text-3xl animate-pulse">🌹</span>
+            <LluviaDecoration type="rueda1" size="md" animation="pulse" />
             <h2 className="text-4xl md:text-5xl font-black text-white">
               {gallery.title}
             </h2>
@@ -107,7 +108,14 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
                     : 'text-[var(--charra-blush)] hover:bg-[var(--charra-magenta)]/20'
                 }`}
               >
-                {category.name === 'Tradición' ? '🏇' : '🌹'} {category.name}
+                <div className="inline-flex items-center gap-2">
+                  <LluviaDecoration 
+                    type={category.name === 'Tradición' ? 'rueda2' : 'rueda1'} 
+                    size="sm" 
+                    animation="pulse" 
+                  />
+                  {category.name}
+                </div>
               </button>
             ))}
           </div>
@@ -163,8 +171,11 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
             <p className="text-lg mb-4 text-[var(--charra-blush)]">
               Cada recuerdo especial de nuestra celebración ecuestre elegante
             </p>
-            <div className="flex justify-center space-x-4 text-2xl">
-              🌹 🏇 � ✨ 🌟
+            <div className="flex justify-center space-x-4">
+              <LluviaDecoration type="rueda1" size="md" animation="bounce" />
+              <LluviaDecoration type="rueda2" size="md" animation="pulse" />
+              <LluviaDecoration type="vineta1" size="md" animation="spin-slow" />
+              <LluviaDecoration type="vineta2" size="md" animation="bounce" />
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 "use client"
 
+import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
+
 interface InvitationData {
   event?: {
     celebrant?: {
@@ -86,12 +88,12 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 border-4" style={{ borderColor: 'var(--charra-accent)' }}>
           {/* Título principal */}
           <div className="text-center mb-10">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <span className="text-5xl animate-bounce">🎂</span>
+            <div className="flex items-center justify-center gap-2 md:gap-4 mb-6">
+              <LluviaDecoration type="rueda1" size="lg" animation="bounce" className="md:w-12 md:h-12 lg:w-16 lg:h-16" />
               <h3 className="text-4xl md:text-6xl font-black" style={{ color: 'var(--charra-primary)' }}>
                 ¡LOS 3 AÑOS!
               </h3>
-              <span className="text-5xl animate-bounce delay-300">🦄</span>
+              <LluviaDecoration type="rueda2" size="lg" animation="bounce" delay="300" className="md:w-12 md:h-12 lg:w-16 lg:h-16" />
             </div>
             <p className="text-2xl font-bold" style={{ color: 'var(--charra-secondary)' }}>
               de nuestra pequeña
@@ -130,7 +132,9 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
                 background: 'var(--charra-gradient-background)',
                 borderColor: 'var(--charra-accent)'
               }}>
-                <div className="text-4xl mb-3">👨</div>
+                <div className="flex justify-center mb-3">
+                  <LluviaDecoration type="vineta1" size="lg" animation="pulse" />
+                </div>
                 <h6 className="text-xl font-bold" style={{ color: 'var(--charra-primary)' }}>{eventData.parents?.father || "Papá"}</h6>
                 <p style={{ color: 'var(--charra-secondary)' }}>Papá</p>
               </div>
@@ -138,7 +142,9 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
                 background: 'var(--charra-gradient-background)',
                 borderColor: 'var(--charra-accent)'
               }}>
-                <div className="text-4xl mb-3">👩</div>
+                <div className="flex justify-center mb-3">
+                  <LluviaDecoration type="vineta2" size="lg" animation="pulse" />
+                </div>
                 <h6 className="text-xl font-bold" style={{ color: 'var(--charra-primary)' }}>{eventData.parents?.mother || "Mamá"}</h6>
                 <p style={{ color: 'var(--charra-secondary)' }}>Mamá</p>
               </div>
@@ -156,7 +162,9 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
                   background: 'var(--charra-gradient-accent)',
                   borderColor: 'var(--charra-highlight)'
                 }}>
-                  <div className="text-4xl mb-3">🎩</div>
+                  <div className="flex justify-center mb-3">
+                    <LluviaDecoration type="rueda1" size="lg" animation="bounce" />
+                  </div>
                   <h6 className="text-xl font-bold" style={{ color: 'var(--charra-primary)' }}>{eventData.padrinos.padrino}</h6>
                   <p style={{ color: 'var(--charra-secondary)' }}>Padrino</p>
                 </div>
@@ -164,7 +172,9 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
                   background: 'var(--charra-gradient-background)',
                   borderColor: 'var(--charra-accent)'
                 }}>
-                  <div className="text-4xl mb-3">👸</div>
+                  <div className="flex justify-center mb-3">
+                    <LluviaDecoration type="rueda2" size="lg" animation="bounce" />
+                  </div>
                   <h6 className="text-xl font-bold" style={{ color: 'var(--charra-primary)' }}>{eventData.padrinos.madrina}</h6>
                   <p style={{ color: 'var(--charra-secondary)' }}>Madrina</p>
                 </div>

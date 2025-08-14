@@ -1,6 +1,7 @@
 "use client"
 
 import { MapPin, Clock, Users, Shirt, AlertCircle, Star, Crown } from 'lucide-react'
+import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
 
 interface PremiumInfoProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -232,17 +233,41 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
             {/* Efectos de fondo modernos */}
             <div className="absolute inset-0 bg-black/10"></div>
             <div className="absolute top-0 left-0 w-full h-full">
-              <div className="absolute top-4 left-4 text-white/60 text-2xl animate-ping">💜</div>
-              <div className="absolute top-6 right-8 text-white/50 text-xl animate-bounce">🦄</div>
-              <div className="absolute bottom-4 left-8 text-white/60 text-2xl animate-pulse">✨</div>
-              <div className="absolute bottom-6 right-4 text-white/50 text-xl animate-spin-slow">🌟</div>
+              <FloatingLluviaDecoration 
+                type="rueda1" 
+                size="lg" 
+                animation="ping" 
+                position="top-4 left-4"
+                opacity="opacity-60"
+              />
+              <FloatingLluviaDecoration 
+                type="vineta1" 
+                size="md" 
+                animation="bounce" 
+                position="top-6 right-8"
+                opacity="opacity-50"
+              />
+              <FloatingLluviaDecoration 
+                type="rueda2" 
+                size="lg" 
+                animation="pulse" 
+                position="bottom-4 left-8"
+                opacity="opacity-60"
+              />
+              <FloatingLluviaDecoration 
+                type="vineta2" 
+                size="md" 
+                animation="spin-slow" 
+                position="bottom-6 right-4"
+                opacity="opacity-50"
+              />
             </div>
             
             <div className="relative z-10">
               <h3 className="text-3xl font-black mb-4 flex items-center justify-center">
-                <span className="text-4xl mr-3">🦄</span>
+                <LluviaDecoration type="rueda1" size="lg" animation="bounce" className="mr-3" />
                 ¡Únete a la Celebración de Lluvia Marina!
-                <span className="text-4xl ml-3">💜</span>
+                <LluviaDecoration type="vineta1" size="lg" animation="pulse" className="ml-3" />
               </h3>
               <p className="text-xl mb-6">
                 Una celebración llena de estilo moderno y diversión.
