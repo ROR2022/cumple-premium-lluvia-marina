@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Camera, ChevronLeft, ChevronRight, X } from 'lucide-react'
-import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
+import { LluviaDecoration } from './LluviaDecoration'
 
 interface GalleryCategory {
   name: string
@@ -85,12 +85,12 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center space-x-3 mb-4">
             <LluviaDecoration type="rueda1" size="md" animation="pulse" />
-            <h2 className="text-4xl md:text-5xl font-black text-white">
+            <h2 className="font-tangerine text-5xl md:text-6xl font-bold text-white">
               {gallery.title}
             </h2>
             <Camera className="w-8 h-8 text-[var(--charra-magenta)] animate-bounce" />
           </div>
-          <p className="text-xl text-[var(--charra-blush)] max-w-2xl mx-auto font-medium">
+          <p className="font-great-vibes text-2xl md:text-3xl text-[var(--charra-blush)] max-w-2xl mx-auto font-medium">
             {gallery.description}
           </p>
         </div>
@@ -102,7 +102,7 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
               <button
                 key={index}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-3 mx-1 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 ${
+                className={`px-6 py-3 mx-1 rounded-xl font-playfair font-bold transition-all duration-300 transform hover:scale-105 ${
                   selectedCategory.name === category.name
                     ? 'charra-bg-primary text-white shadow-lg charra-glow-primary'
                     : 'text-[var(--charra-blush)] hover:bg-[var(--charra-magenta)]/20'
@@ -140,7 +140,7 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
               {/* Overlay elegante */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white font-bold text-sm">
+                  <p className="font-playfair text-white font-bold text-sm">
                     {selectedCategory.name} #{index + 1}
                   </p>
                 </div>
@@ -164,12 +164,12 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
         {/* Información adicional elegante */}
         <div className="mt-12 text-center">
           <div className="charra-bg-secondary rounded-2xl p-8 text-white max-w-3xl mx-auto charra-shadow-primary">
-            <h3 className="text-2xl font-black mb-4 flex items-center justify-center text-[var(--charra-magenta)]">
+            <h3 className="font-tangerine text-4xl md:text-5xl font-bold mb-4 flex items-center justify-center text-[var(--charra-magenta)]">
               <span className="text-3xl mr-3">📸</span>
               ¡Momentos Inolvidables de Lluvia Marina!
             </h3>
-            <p className="text-lg mb-4 text-[var(--charra-blush)]">
-              Cada recuerdo especial de nuestra celebración ecuestre elegante
+            <p className="font-playfair text-xl mb-4 text-[var(--charra-blush)]">
+              Cada recuerdo especial de nuestra celebración
             </p>
             <div className="flex justify-center space-x-4">
               <LluviaDecoration type="rueda1" size="md" animation="bounce" />
@@ -220,10 +220,10 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
 
             {/* Información de la imagen */}
             <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-sm rounded-lg p-4 text-white border border-[var(--charra-magenta)]/30">
-              <p className="font-bold text-lg text-[var(--charra-magenta)]">
+              <p className="font-great-vibes text-2xl md:text-3xl font-bold text-[var(--charra-magenta)]">
                 {selectedCategory.name} - Imagen {selectedImageIndex + 1} de {selectedCategory.images.length}
               </p>
-              <p className="text-sm opacity-80 text-[var(--charra-blush)]">
+              <p className="font-playfair text-base opacity-80 text-[var(--charra-blush)]">
                 Momentos elegantes de la tradición ecuestre
               </p>
             </div>

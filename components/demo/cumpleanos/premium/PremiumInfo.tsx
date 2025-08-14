@@ -36,7 +36,14 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
   }
 
   return (
-    <section className="py-16 relative overflow-hidden" style={{ background: 'var(--charra-gradient-background)' }}>
+    <section className="py-16 relative overflow-hidden" 
+    style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/images/custom/lluvia_botas_logo.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {/* Efectos de fondo modernos */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: 'var(--charra-primary)' }}></div>
@@ -49,12 +56,12 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center space-x-3 mb-4">
             <Crown className="w-8 h-8 animate-pulse" style={{ color: 'var(--charra-accent)' }} />
-            <h2 className="text-4xl md:text-5xl font-black" style={{ color: 'var(--charra-primary)' }}>
+            <h2 className="font-tangerine text-5xl md:text-6xl font-bold" style={{ color: 'var(--charra-primary)' }}>
               💜 Información de la Celebración
             </h2>
             <Star className="w-8 h-8 animate-bounce" style={{ color: 'var(--charra-accent)' }} />
           </div>
-          <p className="text-xl max-w-2xl mx-auto font-medium" style={{ color: 'var(--charra-secondary)' }}>
+          <p className="font-playfair text-xl max-w-2xl mx-auto font-medium" style={{ color: 'var(--charra-secondary)' }}>
             Todo lo que necesitas saber para unirte a la celebración moderna de nuestra pequeña Lluvia Marina
           </p>
         </div>
@@ -62,7 +69,7 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Información de la ceremonia moderna */}
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 border-l-4 transform hover:scale-105 transition-all duration-300" style={{ borderLeftColor: 'var(--charra-accent)' }}>
-            <h3 className="text-2xl font-bold mb-6 flex items-center" style={{ color: 'var(--charra-primary)' }}>
+            <h3 className="font-great-vibes text-3xl md:text-4xl font-bold mb-6 flex items-center" style={{ color: 'var(--charra-primary)' }}>
               💜 Ceremonia de Bienvenida
               <div className="ml-2 w-3 h-3 rounded-full animate-pulse" style={{ backgroundColor: 'var(--charra-accent)' }}></div>
             </h3>
@@ -71,20 +78,20 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 mt-1 flex-shrink-0 animate-pulse" style={{ color: 'var(--charra-accent)' }} />
                 <div>
-                  <p className="font-semibold text-gray-800">Presentación como Pequeña Princesa</p>
-                  <p className="text-gray-600">{eventData.ceremony.date}</p>
-                  <p className="font-medium" style={{ color: 'var(--charra-secondary)' }}>{eventData.ceremony.time}</p>
+                  <p className="font-playfair font-semibold text-gray-800">Presentación como Pequeña Princesa</p>
+                  <p className="font-playfair text-gray-600">{eventData.ceremony.date}</p>
+                  <p className="font-playfair font-medium" style={{ color: 'var(--charra-secondary)' }}>{eventData.ceremony.time}</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0 animate-bounce" style={{ color: 'var(--charra-accent)' }} />
                 <div>
-                  <p className="font-semibold text-gray-800">{eventData.ceremony.location}</p>
-                  <p className="text-gray-600">{eventData.ceremony.address}</p>
+                  <p className="font-playfair font-semibold text-gray-800">{eventData.ceremony.location}</p>
+                  <p className="font-playfair text-gray-600">{eventData.ceremony.address}</p>
                   <div className="mt-2 inline-flex items-center space-x-2 rounded-lg px-3 py-1" style={{ backgroundColor: 'var(--charra-background)' }}>
                     <Star className="w-4 h-4" style={{ color: 'var(--charra-accent)' }} />
-                    <span className="text-sm font-medium" style={{ color: 'var(--charra-secondary)' }}>Jardín Moderno Elegante</span>
+                    <span className="font-playfair text-sm font-medium" style={{ color: 'var(--charra-secondary)' }}>Jardín Moderno Elegante</span>
                   </div>
                 </div>
               </div>
@@ -93,7 +100,7 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
 
           {/* Información de la celebración moderna */}
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 border-l-4 transform hover:scale-105 transition-all duration-300" style={{ borderLeftColor: 'var(--charra-primary)' }}>
-            <h3 className="text-2xl font-bold mb-6 flex items-center" style={{ color: 'var(--charra-primary)' }}>
+            <h3 className="font-great-vibes text-3xl md:text-4xl font-bold mb-6 flex items-center" style={{ color: 'var(--charra-primary)' }}>
               ✨ Fiesta 
               <div className="ml-2 w-3 h-3 rounded-full animate-pulse delay-300" style={{ backgroundColor: 'var(--charra-primary)' }}></div>
             </h3>
@@ -213,10 +220,10 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
               background: 'var(--charra-gradient-background)',
               borderColor: 'var(--charra-accent)'
             }}>
-              <h5 className="text-2xl font-bold mb-4" style={{ color: 'var(--charra-primary)' }}>
+              <h5 className="font-great-vibes text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--charra-primary)' }}>
                 💌 Mensaje especial de la pequeña Lluvia Marina:
               </h5>
-              <p className="text-lg italic leading-relaxed" style={{ color: 'var(--charra-secondary)' }}>
+              <p className="font-playfair text-lg italic leading-relaxed" style={{ color: 'var(--charra-secondary)' }}>
                 &ldquo;¡Hola, queridos invitados! � Esta pequeña princesa está muy emocionada de compartir 
                 su moderna celebración del tercer año con todos ustedes. ¡Vengan con sus mejores galas 
                 y prepárense para una fiesta llena de estilo y diversión! 

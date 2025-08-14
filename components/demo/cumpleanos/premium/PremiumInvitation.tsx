@@ -1,6 +1,6 @@
 "use client"
 
-import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
+import { LluviaDecoration } from './LluviaDecoration'
 
 interface InvitationData {
   event?: {
@@ -76,10 +76,10 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
               <span className="text-4xl">�</span>
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ color: 'var(--charra-primary)' }}>
+                    <h2 className="font-tangerine text-5xl md:text-7xl font-bold mb-4 flex justify-center gap-2 items-center" style={{ color: 'var(--charra-primary)' }}>
             ✨ INVITACIÓN ✨
           </h2>
-          <p className="text-xl max-w-2xl mx-auto" style={{ color: 'var(--charra-secondary)' }}>
+          <p className="font-playfair text-xl max-w-2xl mx-auto" style={{ color: 'var(--charra-secondary)' }}>
             Con gran honor y alegría, les extendemos esta invitación especial para celebrar
           </p>
         </div>
@@ -90,12 +90,12 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-2 md:gap-4 mb-6">
               <LluviaDecoration type="rueda1" size="lg" animation="bounce" className="md:w-12 md:h-12 lg:w-16 lg:h-16" />
-              <h3 className="text-4xl md:text-6xl font-black" style={{ color: 'var(--charra-primary)' }}>
+              <h3 className="font-tangerine text-5xl md:text-7xl font-bold" style={{ color: 'var(--charra-primary)' }}>
                 ¡LOS 3 AÑOS!
               </h3>
               <LluviaDecoration type="rueda2" size="lg" animation="bounce" delay="300" className="md:w-12 md:h-12 lg:w-16 lg:h-16" />
             </div>
-            <p className="text-2xl font-bold" style={{ color: 'var(--charra-secondary)' }}>
+            <p className="font-great-vibes text-3xl md:text-4xl font-bold" style={{ color: 'var(--charra-secondary)' }}>
               de nuestra pequeña
             </p>
           </div>

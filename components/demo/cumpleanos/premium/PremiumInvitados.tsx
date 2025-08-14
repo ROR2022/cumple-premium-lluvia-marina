@@ -1,7 +1,7 @@
 "use client"
 
 import { Crown, Heart } from 'lucide-react'
-import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
+import { LluviaDecoration } from './LluviaDecoration'
 
 interface InvitationData {
   event?: {
@@ -95,10 +95,10 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
               <Crown className="w-10 h-10 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ color: 'var(--charra-primary)' }}>
+          <h2 className="font-tangerine text-5xl md:text-6xl font-bold mb-4" style={{ color: 'var(--charra-primary)' }}>
             ✨ INVITADOS VIP ✨
           </h2>
-          <p className="text-xl max-w-3xl mx-auto" style={{ color: 'var(--charra-secondary)' }}>
+          <p className="font-great-vibes text-2xl md:text-3xl max-w-3xl mx-auto" style={{ color: 'var(--charra-secondary)' }}>
             Personas especiales que harán de esta moderna celebración un día inolvidable para la pequeña {celebrantName.split(' ')[0]}
           </p>
         </div>

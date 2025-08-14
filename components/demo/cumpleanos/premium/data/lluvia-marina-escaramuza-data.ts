@@ -91,21 +91,21 @@ export const lluviaMariaEscaramuzaData = {
 
   // Galería escaramuza elegante
   gallery: {
-    title: "Galería de la Pequeña Jinete",
-    description: "Momentos de nuestra celebración ecuestre",
+    title: "Galería de la Pequeña Princesa",
+    description: "Momentos de nuestra celebración",
     categories: [
       {
-        name: "Llegada a la Hacienda",
+        name: "Llegada",
         images: [
-          "/images/cumple/vaqueros/vaqueros1.png",
-          "/images/cumple/vaqueros/vaqueros2.png"
+          "/images/custom/niña_1.jpeg",
+          "/images/custom/niña_2.jpeg"
         ]
       },
       {
-        name: "Aventuras Elegantes",
+        name: "Aventuras",
         images: [
-          "/images/cumple/vaqueros/vaqueros3.png",
-          "/images/cumple/vaqueros/vaqueros4.png"
+          "/images/custom/niña_3.jpeg",
+          "/images/custom/niña_4.jpeg"
         ]
       }
     ]
@@ -148,22 +148,22 @@ export const lluviaMariaEscaramuzaData = {
   // Cuenta regresiva elegante
   countdown: {
     targetDate: "January 11, 2025 14:00:00",
-    backgroundImage: "/images/cumple/vaqueros/vaqueros1.png"
+    backgroundImage: "/images/custom/lluvia_horse1.jpg"
   },
 
   // Confirmación de asistencia elegante
   attendance: {
     title: "CONFIRMACIÓN DE ASISTENCIA",
-    message: "¡Esperamos a toda la familia en nuestra celebración ecuestre!",
-    subtitle: "Los pequeños jinetes y amazonas son especialmente bienvenidos",
+    message: "¡Esperamos a toda la familia en nuestra celebración!",
+    subtitle: "Los pequeños son especialmente bienvenidos",
     fields: {
-      name: "Nombre del pequeño jinete/amazona",
-      response: "¿Vendrán a la celebración elegante?",
-      companions: "¿Traerán más jinetes contigo?",
+      name: "Nombre",
+      response: "¿Vendrán a la celebración?",
+      companions: "¿Traerán más niños contigo?",
       phone: "Número de contacto para coordinación",
       responseOptions: {
-        yes: "¡Por supuesto, ahí estaremos con elegancia!",
-        no: "Lo siento, no podremos llegar a la hacienda."
+        yes: "¡Por supuesto, ahí estaremos!",
+        no: "Lo siento, no podremos llegar."
       }
     }
   },

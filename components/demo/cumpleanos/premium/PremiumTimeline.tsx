@@ -1,6 +1,6 @@
 "use client"
 
-import { LluviaDecoration, FloatingLluviaDecoration } from './LluviaDecoration'
+import { LluviaDecoration } from './LluviaDecoration'
 
 interface PremiumTimelineProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -78,10 +78,10 @@ export function PremiumTimeline({ data }: PremiumTimelineProps) {
               <span className="text-4xl">📅</span>
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-charra-burgundy mb-4">
+          <h2 className="font-tangerine text-5xl md:text-6xl font-bold text-charra-burgundy mb-4">
             {timelineData.title}
           </h2>
-          <p className="text-xl text-charra-wine max-w-3xl mx-auto">
+          <p className="font-great-vibes text-2xl md:text-3xl text-charra-wine max-w-3xl mx-auto">
             {timelineData.subtitle}
           </p>
         </div>
@@ -104,12 +104,12 @@ export function PremiumTimeline({ data }: PremiumTimelineProps) {
                 <div className="ml-8 flex-1">
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl border-2 border-charra-burgundy/20 hover:border-charra-burgundy/40 transition-all duration-300">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                      <h3 className="text-xl font-black text-charra-burgundy">{event.activity}</h3>
+                      <h3 className="font-great-vibes text-2xl md:text-3xl font-bold text-charra-burgundy">{event.activity}</h3>
                       <div className="bg-gradient-to-r from-charra-burgundy to-charra-wine text-white px-4 py-1 rounded-full text-sm font-bold">
                         {event.time}
                       </div>
                     </div>
-                    <p className="text-charra-wine leading-relaxed">{event.description}</p>
+                    <p className="font-playfair text-lg text-charra-wine leading-relaxed">{event.description}</p>
                   </div>
                 </div>
               </div>
@@ -119,10 +119,10 @@ export function PremiumTimeline({ data }: PremiumTimelineProps) {
 
         {/* Mensaje de cierre */}
         <div className="mt-12 bg-gradient-to-r from-charra-burgundy to-charra-wine rounded-2xl p-8 text-center shadow-2xl">
-          <h3 className="text-2xl md:text-3xl font-black text-white mb-4">
+          <h3 className="font-tangerine text-4xl md:text-5xl font-bold text-white mb-4">
             ¡Un día para recordar por siempre!
           </h3>
-          <p className="text-charra-blush max-w-2xl mx-auto">
+          <p className="font-playfair text-lg text-charra-blush max-w-2xl mx-auto">
             Cada momento está planeado con amor para hacer de esta celebración 
             un recuerdo hermoso e inolvidable para nuestra pequeña amazona.
           </p>

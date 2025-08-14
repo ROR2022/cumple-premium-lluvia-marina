@@ -38,24 +38,24 @@ export function PremiumHero({ data }: PremiumHeroProps) {
         {/* Título moderno con efectos */}
         <div className="mb-8">
           <div className="inline-block mb-4">
-            <span className="bg-gradient-to-r from-[var(--charra-decorative)] via-[var(--charra-accent)] to-[var(--charra-primary)] bg-clip-text text-transparent text-2xl md:text-3xl font-bold animate-pulse">
+            <span className="font-playfair bg-gradient-to-r from-[var(--charra-decorative)] via-[var(--charra-accent)] to-[var(--charra-primary)] bg-clip-text text-transparent text-2xl md:text-3xl font-bold animate-pulse">
               💜 CELEBRACIÓN MODERNA 💜
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-black mb-4 text-shadow-2xl">
+          <h1 className="font-tangerine text-7xl md:text-9xl font-bold mb-4 text-shadow-2xl">
             <span className="bg-gradient-to-r from-[var(--charra-decorative)] via-[var(--charra-accent)] to-[var(--charra-background)] bg-clip-text text-transparent animate-pulse">
               ¡FELIZ CUMPLEAÑOS!
             </span>
           </h1>
           
-          <h2 className="text-5xl md:text-7xl font-black mb-4 transform hover:scale-105 transition-transform duration-500">
+          <h2 className="font-great-vibes text-6xl md:text-8xl font-bold mb-4 transform hover:scale-105 transition-transform duration-500">
             <span className="bg-gradient-to-r from-[var(--charra-accent)] to-[var(--charra-decorative)] bg-clip-text text-transparent">
               {hero?.name || "Lluvia Marina"}
             </span>
           </h2>
           
-          <p className="text-xl md:text-3xl text-[var(--charra-blush)] font-bold animate-bounce">
+          <p className="font-playfair text-xl md:text-2xl italic text-[var(--charra-blush)] font-bold animate-bounce">
             {hero?.subtitle || "¡La pequeña jinete más elegante del rancho!"}
           </p>
         </div>
@@ -64,21 +64,21 @@ export function PremiumHero({ data }: PremiumHeroProps) {
         <div className="bg-black/40 backdrop-blur-lg rounded-3xl p-8 border-2 border-[var(--charra-magenta)]/50 shadow-2xl charra-glow-primary">
           <div className="flex justify-center align-middle">
             <div className="space-y-4">
-              <h3 className="text-3xl font-black text-[var(--charra-blush)] mb-4 flex items-center">
+              <h3 className="font-great-vibes text-3xl font-bold text-[var(--charra-blush)] mb-4 flex items-center">
                 🌹 Perfil de la Pequeña Princesa
               </h3>
               <div className="space-y-3 text-lg">
                 <div className="flex items-center space-x-3">
                   <LluviaDecoration type="vineta1" size="sm" animation="pulse" />
-                  <span><span className="text-[var(--charra-blush)] font-bold">Nombre:</span> {event?.celebrant?.name || "Lluvia Marina Rodríguez"}</span>
+                  <span><span className="font-playfair text-[var(--charra-blush)] font-bold">Nombre:</span> <span className="font-playfair">{event?.celebrant?.name || "Lluvia Marina Rodríguez"}</span></span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <LluviaDecoration type="rueda1" size="sm" animation="pulse" delay="300" />
-                  <span><span className="text-[var(--charra-blush)] font-bold">Edad:</span> {event?.celebrant?.age || "3 años"}</span>
+                  <span><span className="font-playfair text-[var(--charra-blush)] font-bold">Edad:</span> <span className="font-playfair">{event?.celebrant?.age || "3 años"}</span></span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <LluviaDecoration type="vineta2" size="sm" animation="pulse" delay="500" />
-                  <span><span className="text-[var(--charra-background)] font-bold">Origen:</span> {event?.celebrant?.birthDate || "11 de Agosto de 2022"}</span>
+                  <span><span className="font-playfair text-[var(--charra-background)] font-bold">Origen:</span> <span className="font-playfair">{event?.celebrant?.birthDate || "11 de Agosto de 2022"}</span></span>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ export function PremiumHero({ data }: PremiumHeroProps) {
         <div className="w-8 h-12 border-2 border-[var(--charra-decorative)] rounded-full flex justify-center bg-gradient-to-b from-[var(--charra-decorative)]/20 to-transparent">
           <div className="w-2 h-4 bg-gradient-to-b from-[var(--charra-decorative)] to-[var(--charra-accent)] rounded-full mt-2 animate-pulse"></div>
         </div>
-        <p className="text-sm mt-2 text-[var(--charra-background)] font-bold">Continúa la celebración</p>
+        <p className="font-playfair text-sm mt-2 text-[var(--charra-background)] font-bold">Continúa la celebración</p>
       </div>
 
       {/* Efectos de partículas modernas */}

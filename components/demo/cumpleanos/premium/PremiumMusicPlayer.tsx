@@ -116,7 +116,7 @@ export function PremiumMusicPlayer({ data }: PremiumMusicPlayerProps) {
       
       {/* Tooltip informativo */}
       {isPlaying && isElegantTrack && (
-        <div className="absolute bottom-16 right-0 bg-[var(--charra-burgundy)] text-white px-3 py-1 rounded-lg text-xs whitespace-nowrap">
+        <div className="absolute bottom-16 right-0 bg-[var(--charra-burgundy)] text-white px-3 py-1 rounded-lg text-xs whitespace-nowrap font-playfair">
           🌹 Serenata Elegante - Lluvia Marina
         </div>
       )}

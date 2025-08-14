@@ -95,21 +95,28 @@ ${formData.message || 'Sin mensaje adicional'}
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-rose-50 via-purple-50 to-pink-50">
+    <section 
+    style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/images/custom/lluvia_centro1.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    className="py-16 px-4 bg-gradient-to-br from-rose-50 via-purple-50 to-pink-50">
       <div className="max-w-4xl mx-auto">
         {/* Header elegante */}
         <div className="text-center mb-12">
           <div className="flex justify-center items-center gap-4 mb-6">
-            <h2 className="text-4xl md:text-6xl font-black text-pink-800">
+            <h2 className="font-tangerine text-5xl md:text-7xl font-bold text-pink-800">
               {attendance.title}
             </h2>
             <span className="text-4xl animate-bounce delay-300">📝</span>
           </div>
           
-          <p className="text-xl text-pink-700 mb-4">
+          <p className="font-great-vibes text-2xl md:text-3xl text-pink-700 mb-4">
             {attendance.message}
           </p>
-          <p className="text-lg text-pink-600">
+          <p className="font-playfair text-xl text-pink-600">
             {attendance.subtitle}
           </p>
         </div>
@@ -117,11 +124,11 @@ ${formData.message || 'Sin mensaje adicional'}
         {/* Formulario elegante */}
         <Card className="bg-white/90 backdrop-blur-lg border border-pink-200 shadow-2xl">
           <CardHeader className="bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-t-lg">
-            <CardTitle className="text-2xl font-bold flex items-center gap-2">
-              🎯 Confirma tu asistencia elegante
+            <CardTitle className="font-great-vibes text-3xl md:text-4xl font-bold flex items-center gap-2">
+              🎯 Confirma tu asistencia
             </CardTitle>
-            <CardDescription className="text-pink-100">
-              ¡Lluvia Marina quiere saber quiénes vendrán a su celebración ecuestre!
+            <CardDescription className="font-playfair text-lg text-pink-100">
+              ¡Lluvia Marina quiere saber quiénes vendrán a su celebración!
             </CardDescription>
           </CardHeader>
 
@@ -185,7 +192,9 @@ ${formData.message || 'Sin mensaje adicional'}
               </div>
 
               {/* Acompañantes */}
-              <div className="space-y-2">
+              <div 
+              style={{display:'none'}}
+              className="space-y-2">
                 <Label htmlFor="companions" className="text-lg font-semibold text-pink-800 flex items-center gap-2">
                   👥 {attendance.fields.companions} (opcional)
                 </Label>
@@ -215,7 +224,7 @@ ${formData.message || 'Sin mensaje adicional'}
 
               {/* Información del evento */}
               <div className="bg-gradient-to-r from-pink-100 to-purple-100 p-6 rounded-lg border border-pink-300">
-                <h3 className="text-xl font-bold text-pink-800 mb-4 flex items-center gap-2">
+                <h3 className="font-great-vibes text-2xl md:text-3xl font-bold text-pink-800 mb-4 flex items-center gap-2">
                   ℹ️ Información del evento
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-pink-700">

@@ -64,6 +64,11 @@ const config: Config = {
   				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
+  		fontFamily: {
+  			'tangerine': ['Tangerine', 'cursive'],
+  			'great-vibes': ['Great Vibes', 'cursive'],
+  			'playfair': ['Playfair Display', 'serif'],
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
