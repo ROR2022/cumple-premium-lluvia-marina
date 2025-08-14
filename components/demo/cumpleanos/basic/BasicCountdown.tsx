@@ -104,7 +104,7 @@ export function BasicCountdown({ data }: BasicCountdownProps) {
         {/* Mensaje elegante motivacional */}
         <div className="bg-black/60 backdrop-blur-sm rounded-2xl p-8 border border-[var(--charra-magenta)]/30 charra-shadow-primary">
           <p className="text-2xl md:text-3xl text-[var(--charra-magenta)] font-bold mb-4">
-            🌹 ¡La pequeña jinete celebra su día especial! 🏇
+            🌹 ¡La pequeña princesa celebra su día especial! 🏇
           </p>
           <p className="text-lg text-[var(--charra-blush)]">
             Prepárate para una celebración llena de tradición y momentos inolvidables

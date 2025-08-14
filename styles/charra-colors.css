@@ -1,65 +1,103 @@
 :root {
-  /* === PALETA ESCARAMUZA CHARRA === */
+  /* === NUEVA PALETA MODERNA LLUVIA MARINA === */
   
-  /* Colores base */
-  --charra-burgundy: #7b003b;      /* Base elegante */
-  --charra-emerald: #007b42;       /* Contraste dramático */
-  --charra-magenta: #a1004f;       /* Feminidad vibrante */
-  --charra-wine: #5e002c;          /* Profundidad */
-  --charra-blush: #e6d8d8;         /* Suavidad infantil */
+  /* Colores base actualizados */
+  --charra-primary: #A87BCE;        /* Principal - botones y elementos destacados */
+  --charra-background: #C9A7E6;     /* Fondos suaves y áreas amplias */
+  --charra-text-dark: #7C4F9E;      /* Textos e íconos - contraste fuerte */
+  --charra-decorative: #D47BC3;     /* Detalles decorativos y acentos */
+  --charra-accent: #8ECEA8;         /* Contraste complementario verde suave */
   
-  /* Gradientes principales */
-  --charra-primary: linear-gradient(135deg, #7b003b, #a1004f);
-  --charra-secondary: linear-gradient(135deg, #007b42, #5e002c);
-  --charra-accent: linear-gradient(135deg, #a1004f, #e6d8d8);
-  --charra-background: linear-gradient(135deg, #e6d8d8, #f5f0f0);
-  --charra-hero-bg: linear-gradient(135deg, #5e002c 0%, #7b003b 50%, #a1004f 100%);
+  /* Mapeo de colores legacy para compatibilidad */
+  --charra-burgundy: #7C4F9E;       /* Mapeado a texto oscuro */
+  --charra-emerald: #8ECEA8;        /* Mapeado a verde complementario */
+  --charra-magenta: #D47BC3;        /* Mapeado a decorativo */
+  --charra-wine: #7C4F9E;           /* Mapeado a texto oscuro */
+  --charra-blush: #C9A7E6;          /* Mapeado a fondo suave */
+  
+  /* Gradientes principales actualizados */
+  --charra-gradient-primary: linear-gradient(135deg, #A87BCE, #D47BC3);
+  --charra-gradient-secondary: linear-gradient(135deg, #8ECEA8, #7C4F9E);
+  --charra-gradient-accent: linear-gradient(135deg, #D47BC3, #C9A7E6);
+  --charra-gradient-background: linear-gradient(135deg, #C9A7E6, #f0e8f5);
+  --charra-gradient-hero: linear-gradient(135deg, #7C4F9E 0%, #A87BCE 50%, #D47BC3 100%);
+  
+  /* Variables legacy actualizadas */
+  --charra-primary-legacy: var(--charra-gradient-primary);
+  --charra-secondary: var(--charra-gradient-secondary);
+  --charra-accent-legacy: var(--charra-gradient-accent);
+  --charra-background-legacy: var(--charra-gradient-background);
+  --charra-hero-bg: var(--charra-gradient-hero);
   
   /* Transparencias para efectos */
-  --charra-burgundy-20: rgba(123, 0, 59, 0.2);
-  --charra-emerald-20: rgba(0, 123, 66, 0.2);
-  --charra-magenta-20: rgba(161, 0, 79, 0.2);
-  --charra-wine-40: rgba(94, 0, 44, 0.4);
-  --charra-blush-80: rgba(230, 216, 216, 0.8);
+  --charra-primary-20: rgba(168, 123, 206, 0.2);
+  --charra-accent-20: rgba(142, 206, 168, 0.2);
+  --charra-decorative-20: rgba(212, 123, 195, 0.2);
+  --charra-text-40: rgba(124, 79, 158, 0.4);
+  --charra-background-80: rgba(201, 167, 230, 0.8);
   
-  /* Colores de texto */
-  --charra-text-primary: #5e002c;
-  --charra-text-secondary: #7b003b;
-  --charra-text-light: #a1004f;
-  --charra-text-accent: #007b42;
+  /* Colores de texto actualizados */
+  --charra-text-primary: #7C4F9E;
+  --charra-text-secondary: #A87BCE;
+  --charra-text-light: #D47BC3;
+  --charra-text-accent: #8ECEA8;
 }
 
-/* === CLASES UTILITARIAS CHARRA === */
+/* === CLASES UTILITARIAS ACTUALIZADAS === */
 .charra-bg-primary { background: var(--charra-primary); }
-.charra-bg-secondary { background: var(--charra-secondary); }
-.charra-bg-accent { background: var(--charra-accent); }
-.charra-bg-background { background: var(--charra-background); }
-.charra-bg-hero { background: var(--charra-hero-bg); }
+.charra-bg-secondary { background: var(--charra-gradient-secondary); }
+.charra-bg-accent { background: var(--charra-gradient-accent); }
+.charra-bg-background { background: var(--charra-gradient-background); }
+.charra-bg-hero { background: var(--charra-gradient-hero); }
+
+/* Fondos sólidos adicionales */
+.charra-bg-soft { background: var(--charra-background); }
+.charra-bg-decorative { background: var(--charra-decorative); }
 
 .charra-text-primary { color: var(--charra-text-primary); }
 .charra-text-secondary { color: var(--charra-text-secondary); }
 .charra-text-light { color: var(--charra-text-light); }
 .charra-text-accent { color: var(--charra-text-accent); }
 
-.charra-border-primary { border-color: var(--charra-burgundy); }
-.charra-border-secondary { border-color: var(--charra-emerald); }
-.charra-border-accent { border-color: var(--charra-magenta); }
+.charra-border-primary { border-color: var(--charra-primary); }
+.charra-border-secondary { border-color: var(--charra-accent); }
+.charra-border-accent { border-color: var(--charra-decorative); }
 
-/* === EFECTOS VISUALES ESCARAMUZA === */
+/* === EFECTOS VISUALES MODERNOS === */
 .charra-shadow-primary {
-  box-shadow: 0 10px 30px var(--charra-burgundy-20);
+  box-shadow: 0 10px 30px var(--charra-primary-20);
 }
 
 .charra-shadow-accent {
-  box-shadow: 0 10px 30px var(--charra-magenta-20);
+  box-shadow: 0 10px 30px var(--charra-decorative-20);
 }
 
 .charra-glow-primary {
-  box-shadow: 0 0 20px var(--charra-burgundy-20);
+  box-shadow: 0 0 20px var(--charra-primary-20);
 }
 
-.charra-glow-emerald {
-  box-shadow: 0 0 20px var(--charra-emerald-20);
+.charra-glow-accent {
+  box-shadow: 0 0 20px var(--charra-accent-20);
+}
+
+.charra-glow-decorative {
+  box-shadow: 0 0 20px var(--charra-decorative-20);
+}
+
+/* Efectos adicionales modernos */
+.charra-glass {
+  background: var(--charra-background-80);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--charra-primary-20);
+}
+
+.charra-hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.charra-hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px var(--charra-primary-20);
 }
 
 /* === ANIMACIONES ELEGANTES === */

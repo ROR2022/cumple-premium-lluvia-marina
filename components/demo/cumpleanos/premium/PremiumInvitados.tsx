@@ -85,20 +85,20 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
   ]
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50">
+    <section className="py-16 px-4" style={{ background: 'var(--charra-gradient-background)' }}>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
-            <div className="w-20 h-20 bg-gradient-to-r from-pink-800 to-purple-800 rounded-full flex items-center justify-center shadow-xl">
+            <div className="w-20 h-20 rounded-full flex items-center justify-center shadow-xl" style={{ background: 'var(--charra-gradient-primary)' }}>
               <Crown className="w-10 h-10 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-pink-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ color: 'var(--charra-primary)' }}>
             ✨ INVITADOS VIP ✨
           </h2>
-          <p className="text-xl text-pink-700 max-w-3xl mx-auto">
-            Personas especiales que harán de esta elegante celebración un día inolvidable para la pequeña {celebrantName.split(' ')[0]}
+          <p className="text-xl max-w-3xl mx-auto" style={{ color: 'var(--charra-secondary)' }}>
+            Personas especiales que harán de esta moderna celebración un día inolvidable para la pequeña {celebrantName.split(' ')[0]}
           </p>
         </div>
 
@@ -107,34 +107,35 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
           {vipGuests.map((guest, index) => (
             <div
               key={index}
-              className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-6 border-2 border-pink-200 hover:border-pink-400 transition-all duration-300 hover:shadow-2xl group"
+              className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-6 border-2 hover:shadow-2xl group transition-all duration-300"
+              style={{ borderColor: 'var(--charra-accent)' }}
             >
               {/* Icono y badge */}
               <div className="flex items-center justify-between mb-4">
                 <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
                   {guest.icon}
                 </div>
-                <div className="bg-gradient-to-r from-pink-800 to-purple-800 text-white px-3 py-1 rounded-full text-sm font-bold">
+                <div className="text-white px-3 py-1 rounded-full text-sm font-bold" style={{ background: 'var(--charra-gradient-primary)' }}>
                   VIP
                 </div>
               </div>
 
               {/* Información del invitado */}
-              <h3 className="text-xl font-black text-pink-800 mb-2">
+              <h3 className="text-xl font-black mb-2" style={{ color: 'var(--charra-primary)' }}>
                 {guest.name}
               </h3>
               
-              <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-3 mb-3">
-                <p className="text-pink-800 font-bold text-sm">
-                  🐎 {guest.role}
+              <div className="rounded-lg p-3 mb-3" style={{ background: 'var(--charra-gradient-background)' }}>
+                <p className="font-bold text-sm" style={{ color: 'var(--charra-primary)' }}>
+                  � {guest.role}
                 </p>
               </div>
 
-              <p className="text-pink-700 text-sm mb-3 leading-relaxed">
+              <p className="text-sm mb-3 leading-relaxed" style={{ color: 'var(--charra-secondary)' }}>
                 {guest.description}
               </p>
 
-              <div className="flex items-center gap-2 text-xs text-pink-600">
+              <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--charra-accent)' }}>
                 <Heart className="w-3 h-3" />
                 <span className="font-medium">{guest.relationship}</span>
               </div>
@@ -143,45 +144,54 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
         </div>
 
         {/* Mensaje especial para todos los invitados */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border-4 border-pink-300">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border-4" style={{ borderColor: 'var(--charra-accent)' }}>
           <div className="text-center">
-            <h3 className="text-3xl font-black text-pink-800 mb-6">
+            <h3 className="text-3xl font-black mb-6" style={{ color: 'var(--charra-primary)' }}>
               💌 Para todos nuestros queridos invitados
             </h3>
             
-            <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-xl p-6 mb-6">
-              <p className="text-lg text-pink-700 leading-relaxed">
-                Cada uno de ustedes tiene un lugar especial en el corazón de nuestra pequeña amazona. 
+            <div className="rounded-xl p-6 mb-6" style={{ background: 'var(--charra-gradient-background)' }}>
+              <p className="text-lg leading-relaxed" style={{ color: 'var(--charra-secondary)' }}>
+                Cada uno de ustedes tiene un lugar especial en el corazón de nuestra pequeña princesa. 
                 Su presencia hará que este día sea realmente mágico y lleno de amor. 
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-6">
-              <div className="bg-pink-100 rounded-lg p-4 border-2 border-pink-300">
+              <div className="rounded-lg p-4 border-2" style={{ 
+                background: 'var(--charra-background)', 
+                borderColor: 'var(--charra-accent)' 
+              }}>
                 <div className="text-3xl mb-2">👥</div>
-                <h4 className="font-bold text-pink-800 mb-1">Familia Especial</h4>
-                <p className="text-sm text-pink-700">Los que siempre están ahí</p>
+                <h4 className="font-bold mb-1" style={{ color: 'var(--charra-primary)' }}>Familia Especial</h4>
+                <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>Los que siempre están ahí</p>
               </div>
               
-              <div className="bg-green-100 rounded-lg p-4 border-2 border-green-300">
+              <div className="rounded-lg p-4 border-2" style={{ 
+                background: 'var(--charra-gradient-accent)', 
+                borderColor: 'var(--charra-highlight)' 
+              }}>
                 <div className="text-3xl mb-2">💝</div>
-                <h4 className="font-bold text-green-800 mb-1">Amigos del Alma</h4>
-                <p className="text-sm text-green-700">Los que hacen reír siempre</p>
+                <h4 className="font-bold mb-1" style={{ color: 'var(--charra-primary)' }}>Amigos del Alma</h4>
+                <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>Los que hacen reír siempre</p>
               </div>
               
-              <div className="bg-purple-100 rounded-lg p-4 border-2 border-purple-300">
+              <div className="rounded-lg p-4 border-2" style={{ 
+                background: 'var(--charra-background)', 
+                borderColor: 'var(--charra-accent)' 
+              }}>
                 <div className="text-3xl mb-2">🌟</div>
-                <h4 className="font-bold text-purple-800 mb-1">Padrinos Queridos</h4>
-                <p className="text-sm text-purple-700">Los guías de esta celebración</p>
+                <h4 className="font-bold mb-1" style={{ color: 'var(--charra-primary)' }}>Padrinos Queridos</h4>
+                <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>Los guías de esta celebración</p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-pink-800 to-purple-800 rounded-xl p-6 text-white">
-              <h4 className="text-2xl font-bold mb-3">🐎 Código de Honor</h4>
-              <p className="text-pink-100 text-sm">
-                &ldquo;En la elegante tradición de la pequeña {celebrantName.split(' ')[0]}, todos los invitados son tratados 
-                con el máximo respeto y cariño. Porque en esta familia escaramuza, 
-                ¡todos somos parte de la misma hermosa tradición! ✨&rdquo;
+            <div className="rounded-xl p-6 text-white" style={{ background: 'var(--charra-gradient-primary)' }}>
+              <h4 className="text-2xl font-bold mb-3">� Código Moderno</h4>
+              <p className="text-white/90 text-sm">
+                &ldquo;En la moderna tradición de la pequeña {celebrantName.split(' ')[0]}, todos los invitados son tratados 
+                con el máximo respeto y cariño. Porque en esta familia contemporánea, 
+                ¡todos somos parte de la misma hermosa celebración! ✨&rdquo;
               </p>
             </div>
           </div>
@@ -189,9 +199,13 @@ export function PremiumInvitados({ data }: PremiumInvitadosProps) {
 
         {/* Nota demo */}
         <div 
-        style={{display: 'none'}}
-        className="mt-8 bg-pink-100 border border-pink-300 rounded-lg p-4">
-          <p className="text-sm text-pink-800 text-center">
+        style={{
+          display: 'none',
+          backgroundColor: 'var(--charra-background)', 
+          borderColor: 'var(--charra-accent)' 
+        }}
+        className="mt-8 border rounded-lg p-4">
+          <p className="text-sm text-center" style={{ color: 'var(--charra-primary)' }}>
             <strong>💡 Demo:</strong> Esta sección premium destaca a los invitados más especiales. 
             En tu invitación real, puedes personalizar la lista VIP con las personas más importantes para tu celebración.
           </p>

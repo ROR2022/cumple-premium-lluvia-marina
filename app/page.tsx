@@ -33,7 +33,7 @@ export default function LandingPage() {
         {/* <PremiumTimeline data={lluviaMariaEscaramuzaData} /> */}
 
         {/* Lista de invitados escaramuza */}
-        <PremiumInvitados data={lluviaMariaEscaramuzaData} />
+        {/* <PremiumInvitados data={lluviaMariaEscaramuzaData} /> */}
 
         {/* Galería premium escaramuza */}
         <PremiumGallery data={lluviaMariaEscaramuzaData} />
@@ -42,7 +42,7 @@ export default function LandingPage() {
         <BasicAttendance attendance={lluviaMariaEscaramuzaData.attendance} />
 
         {/* Opciones de regalo */}
-        <BasicGiftOptions gifts={lluviaMariaEscaramuzaData.gifts} />
+        {/* <BasicGiftOptions gifts={lluviaMariaEscaramuzaData.gifts} /> */}
 
         {/* Reproductor de música */}
         <PremiumMusicPlayer data={lluviaMariaEscaramuzaData} />

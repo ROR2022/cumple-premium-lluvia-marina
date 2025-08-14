@@ -2,16 +2,16 @@ export const lluviaMariaEscaramuzaData = {
   // Hero section elegante
   hero: {
     name: "Lluvia Marina",
-    subtitle: "¡La pequeña jinete más elegante del rancho!",
-    backgroundImage: "/images/cumple/vaqueros/vaqueros1.png" // Temporal, cambiar después
+    subtitle: "¡La pequeña princesa más elegante del rancho!",
+    backgroundImage: "/images/custom/lluvia_portada.jpg" // Temporal, cambiar después
   },
 
   // Event information refinada
   event: {
     celebrant: {
-      name: "Lluvia Marina Rodríguez",
+      name: "Lluvia Marina Marmolejo Quintanar",
       age: "3 años",
-      birthDate: "11 de Agosto de 2022"
+      birthDate: "19 de Septiembre de 2022"
     },
     parents: {
       father: "Roberto Rodríguez",
@@ -136,12 +136,12 @@ export const lluviaMariaEscaramuzaData = {
     ]
   },
 
-  // Tema de colores escaramuza
+  // Tema de colores moderno
   theme: {
     primary: "var(--charra-primary)",
-    secondary: "var(--charra-secondary)",
+    secondary: "var(--charra-gradient-secondary)",
     accent: "var(--charra-accent)", 
-    background: "var(--charra-background)",
+    background: "var(--charra-gradient-background)",
     text: "var(--charra-text-primary)"
   },
 
@@ -200,28 +200,28 @@ export const lluviaMariaEscaramuzaData = {
     ]
   },
 
-  // Premium badge escaramuza
+  // Premium badge moderno
   premium: {
-    color: "var(--charra-primary)"
+    color: "var(--charra-gradient-primary)"
   },
 
-  // Demo information elegante
+  // Demo information elegante moderna
   demo: {
-    badge: "🌹 ESCARAMUZA CHARRA PREMIUM - Lluvia Marina ($499)",
-    description: "Invitación personalizada escaramuza charra premium para Lluvia Marina",
+    badge: "💜 CELEBRACIÓN MODERNA PREMIUM - Lluvia Marina ($499)",
+    description: "Invitación personalizada moderna premium para Lluvia Marina",
     features: [
       "Todo del Básico",
-      "Galería ecuestre interactiva",
-      "Música mariachi infantil elegante", 
-      "Cronograma escaramuza completo",
-      "Diseño premium con elegancia mexicana",
+      "Galería interactiva moderna",
+      "Música personalizada", 
+      "Cronograma elegante completo",
+      "Diseño premium con paleta moderna",
       "Efectos visuales sofisticados",
-      "Personalización temática cultural discreta"
+      "Personalización temática contemporánea"
     ],
     cta: {
-      title: "¡Celebración Ecuestre Lista!",
-      subtitle: "Una celebración elegante de escaramuza charra para nuestra pequeña Lluvia Marina",
-      buttonText: "Confirmar Invitación Escaramuza - $499",
+      title: "¡Celebración Moderna Lista!",
+      subtitle: "Una celebración elegante y contemporánea para nuestra pequeña Lluvia Marina",
+      buttonText: "Confirmar Invitación Moderna - $499",
       link: "/#contact"
     }
   }

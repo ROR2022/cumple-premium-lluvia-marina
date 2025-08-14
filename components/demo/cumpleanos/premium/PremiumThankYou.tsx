@@ -32,30 +32,30 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
   }
   
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-pink-50 via-pink-50 to-purple-50">
+    <section className="py-16 px-4" style={{ background: 'var(--charra-gradient-background)' }}>
       <div className="max-w-4xl mx-auto">
         {/* Header principal */}
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
-            <div className="w-24 h-24 bg-gradient-to-r from-pink-800 to-pink-700 rounded-full flex items-center justify-center shadow-xl animate-pulse">
+            <div className="w-24 h-24 rounded-full flex items-center justify-center shadow-xl animate-pulse" style={{ background: 'var(--charra-gradient-primary)' }}>
               <Heart className="w-12 h-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-pink-800 mb-4">
+          <h2 className="text-4xl md:text-6xl font-black mb-4" style={{ color: 'var(--charra-primary)' }}>
             ✨ ¡GRACIAS INFINITAS! ✨
           </h2>
-          <p className="text-xl text-pink-700 max-w-3xl mx-auto">
-            Desde el corazón de nuestra pequeña amazona y toda la familia escaramuza
+          <p className="text-xl max-w-3xl mx-auto" style={{ color: 'var(--charra-secondary)' }}>
+            Desde el corazón de nuestra pequeña princesa y toda la familia moderna
           </p>
         </div>
 
         {/* Mensaje principal de agradecimiento */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 border-4 border-pink-800/30 mb-12">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 border-4 mb-12" style={{ borderColor: 'var(--charra-accent)' }}>
           <div className="text-center">
             {/* Título emocional */}
             <div className="mb-8">
-              <h3 className="text-3xl md:text-4xl font-black text-pink-800 mb-4">
-                🐎 ¡Un millón de gracias elegantes! 🐎
+              <h3 className="text-3xl md:text-4xl font-black mb-4" style={{ color: 'var(--charra-primary)' }}>
+                � ¡Un millón de gracias! �
               </h3>
               <div className="flex justify-center gap-4 mb-6">
                 <span className="text-4xl animate-bounce">✨</span>
@@ -65,55 +65,72 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
             </div>
 
             {/* Mensaje de Lluvia Marina */}
-            <div className="bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl p-8 mb-8 border-2 border-pink-800/20">
+            <div className="rounded-xl p-8 mb-8 border-2" style={{ 
+              background: 'var(--charra-gradient-background)', 
+              borderColor: 'var(--charra-accent)' 
+            }}>
               <div className="text-5xl mb-4">👑</div>
-              <h4 className="text-2xl font-bold text-pink-800 mb-4">
+              <h4 className="text-2xl font-bold mb-4" style={{ color: 'var(--charra-primary)' }}>
                 Mensaje directo de la pequeña {eventData.celebrant?.name || "Lluvia Marina"}:
               </h4>
-              <p className="text-lg text-pink-700 italic leading-relaxed mb-4">
-                &ldquo;¡Hola, mis queridos invitados elegantes! 🐎 
+              <p className="text-lg italic leading-relaxed mb-4" style={{ color: 'var(--charra-secondary)' }}>
+                &ldquo;¡Hola, mis queridos invitados elegantes! � 
                 Ha sido la celebración más hermosa de mi vida compartir mis 3 añitos con todos ustedes. 
                 Cada abrazo, cada sonrisa, cada momento de alegría... ¡todo fue perfecto! 
-                Gracias por hacer de mi día el más especial con tanta elegancia y amor. 
-                ¡Los amo con todo mi corazoncito de pequeña amazona! 💖✨&rdquo;
+                Gracias por hacer de mi día el más especial con tanto estilo y amor. 
+                ¡Los amo con todo mi corazoncito de pequeña princesa! 💖✨&rdquo;
               </p>
-              <div className="text-2xl">🐎💕🎂</div>
+              <div className="text-2xl">🦄💕🎂</div>
             </div>
 
             {/* Agradecimientos específicos */}
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-br from-pink-50 to-pink-50 rounded-xl p-6 border-2 border-pink-800/20">
+              <div className="rounded-xl p-6 border-2" 
+              style={{ 
+                display: 'none',
+                background: 'var(--charra-background)', 
+                borderColor: 'var(--charra-accent)' 
+              }}>
                 <div className="text-3xl mb-3">🎁</div>
-                <h5 className="text-xl font-bold text-pink-800 mb-3">Por los regalos hermosos</h5>
-                <p className="text-pink-700 text-sm">
-                  Cada detalle fue elegido con tanto amor. Los juguetes elegantes, la ropa preciosa, 
-                  los libros... ¡todo perfecto para nuestra pequeña amazona!
+                <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por los regalos hermosos</h5>
+                <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
+                  Cada detalle fue elegido con tanto amor. Los juguetes modernos, la ropa preciosa, 
+                  los libros... ¡todo perfecto para nuestra pequeña princesa!
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-green-50 to-green-50 rounded-xl p-6 border-2 border-green-800/20">
+              <div className="rounded-xl p-6 border-2" style={{ 
+                background: 'var(--charra-gradient-accent)', 
+                borderColor: 'var(--charra-highlight)' 
+              }}>
                 <div className="text-3xl mb-3">👥</div>
-                <h5 className="text-xl font-bold text-green-800 mb-3">Por su hermosa presencia</h5>
-                <p className="text-green-700 text-sm">
+                <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por su hermosa presencia</h5>
+                <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
                   Ver a todos nuestros seres queridos reunidos para celebrar a Lluvia Marina 
                   fue el regalo más grande que pudimos recibir.
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border-2 border-purple-800/20">
+              <div className="rounded-xl p-6 border-2" style={{ 
+                background: 'var(--charra-gradient-background)', 
+                borderColor: 'var(--charra-accent)' 
+              }}>
                 <div className="text-3xl mb-3">📸</div>
-                <h5 className="text-xl font-bold text-purple-800 mb-3">Por los momentos capturados</h5>
-                <p className="text-purple-700 text-sm">
+                <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por los momentos capturados</h5>
+                <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
                   Las fotos, los videos, las risas compartidas... cada recuerdo quedó 
                   guardado para siempre en nuestros corazones.
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 border-2 border-pink-700/20">
+              <div className="rounded-xl p-6 border-2" style={{ 
+                background: 'var(--charra-background)', 
+                borderColor: 'var(--charra-accent)' 
+              }}>
                 <div className="text-3xl mb-3">🎉</div>
-                <h5 className="text-xl font-bold text-pink-700 mb-3">Por la alegría compartida</h5>
-                <p className="text-pink-600 text-sm">
-                  Los juegos, los bailes, la diversión elegante... ¡todos se divirtieron 
+                <h5 className="text-xl font-bold mb-3" style={{ color: 'var(--charra-primary)' }}>Por la alegría compartida</h5>
+                <p className="text-sm" style={{ color: 'var(--charra-secondary)' }}>
+                  Los juegos, los bailes, la diversión moderna... ¡todos se divirtieron 
                   tanto como nuestra pequeña cumpleañera!
                 </p>
               </div>
@@ -122,7 +139,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
         </div>
 
         {/* Mensaje de los padres */}
-        <div className="bg-gradient-to-r from-pink-800 to-pink-700 rounded-2xl p-8 text-white text-center mb-12">
+        <div className="rounded-2xl p-8 text-white text-center mb-12" style={{ background: 'var(--charra-gradient-primary)' }}>
           <h4 className="text-3xl font-bold mb-6">💌 Palabras de los padres</h4>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-pink-100 leading-relaxed mb-6">
@@ -159,7 +176,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
             <div className="bg-green-50 rounded-lg p-4">
               <div className="text-3xl mb-2">🤝</div>
               <h5 className="font-bold text-green-800">Siempre unidos</h5>
-              <p className="text-sm text-green-700">¡La familia escaramuza crece!</p>
+              <p className="text-sm text-green-700">¡La familia Marmolejo Quintanar crece!</p>
             </div>
             
             <div className="bg-purple-50 rounded-lg p-4">
