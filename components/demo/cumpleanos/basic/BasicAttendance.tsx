@@ -39,8 +39,8 @@ const eventInfo = {
 };
 
 const contactInfo = {
-  phone: "4271848975",
-  whatsapp: "524271848975", // +52 (México) + número sin el primer 0
+  phone: "7731288298",
+  whatsapp: "527731288298", // +52 (México) + número sin el primer 0
   deadline: "19 de Septiembre, 2025"
 };
 
