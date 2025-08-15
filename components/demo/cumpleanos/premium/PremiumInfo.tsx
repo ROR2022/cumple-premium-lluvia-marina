@@ -45,6 +45,10 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
       "Ambiente familiar - ropa cómoda recomendada para actividades ecuestres de los pequeños",
   };
 
+  const handleGoMaps = (link: string) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <section
       className="py-16 relative overflow-hidden"
@@ -91,7 +95,7 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
             />
           </div>
           <p className="font-playfair text-white text-xl max-w-2xl mx-auto font-medium">
-            Todo lo que necesitas saber para unirte a la celebración moderna de
+            Todo lo que necesitas saber para unirte a la celebración de
             nuestra pequeña Lluvia Marina
           </p>
         </div>
@@ -148,8 +152,11 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
                     {eventData.ceremony.address}
                   </p>
                   <div
+                    onClick={()=>handleGoMaps(eventData.ceremony.locationLink)}
                     className="mt-2 inline-flex items-center space-x-2 rounded-lg px-3 py-1"
-                    style={{ backgroundColor: "var(--charra-background)" }}
+                    style={{
+                      cursor: 'pointer', 
+                      backgroundColor: "var(--charra-background)" }}
                   >
                     <Star
                       className="w-4 h-4"
@@ -159,7 +166,7 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
                       className="font-playfair text-sm font-medium"
                       style={{ color: "var(--charra-secondary)" }}
                     >
-                      Jardín Moderno Elegante
+                      Ver en Google Maps
                     </span>
                   </div>
                 </div>
@@ -216,8 +223,12 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
                     {eventData.celebration.address}
                   </p>
                   <div
+                  onClick={()=>handleGoMaps(eventData.celebration.locationLink)}
                     className="mt-2 inline-flex items-center space-x-2 rounded-lg px-3 py-1"
-                    style={{ backgroundColor: "var(--charra-background)" }}
+                    style={{
+                      cursor: 'pointer',
+                      backgroundColor: "var(--charra-background)"
+                    }}
                   >
                     <Crown
                       className="w-4 h-4"
@@ -227,7 +238,7 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
                       className="text-sm font-medium"
                       style={{ color: "var(--charra-secondary)" }}
                     >
-                      Salón de Gala Moderno
+                      Ver en Google Maps
                     </span>
                   </div>
                 </div>
@@ -384,11 +395,11 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
               className="font-playfair text-lg italic leading-relaxed"
               style={{ color: "var(--charra-secondary)" }}
             >
-              &ldquo;¡Hola, queridos invitados! � Esta pequeña princesa está muy
-              emocionada de compartir su moderna celebración del tercer año con
-              todos ustedes. ¡Vengan con sus mejores galas y prepárense para una
-              fiesta llena de estilo y diversión! ¡Los esperamos con mucho
-              cariño! ✨🦄&rdquo;
+              &ldquo;¡Hola, queridos invitados! � Esta pequeña princesa está muy 
+              emocionada de compartir 
+              su celebración del tercer año con todos ustedes. 
+              ¡Vengan y prepárense para una fiesta llena de diversión! 
+              ¡Los esperamos con mucho cariño! ✨🦄&rdquo;
             </p>
           </div>
         </div>

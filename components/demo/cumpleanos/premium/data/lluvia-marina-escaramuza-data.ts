@@ -22,19 +22,21 @@ export const lluviaMariaEscaramuzaData = {
       madrina: "Edith Quijada Pérez"
     },
     ceremony: {
-      date: "Sábado 11 de Enero, 2025",
-      time: "2:00 PM",
-      location: "Hacienda de las Rosas",
-      address: "Camino de las Flores Km 12, Valle Encantado"
+      date: "Sábado 20 de Septiembre, 2025",
+      time: "12:00 PM",
+      location: "Parroquia de San Juan Bautista",
+      address: "Manzana 006, 54274 San Juan Acazuchitlán, Méx.",
+      locationLink: "https://maps.app.goo.gl/SDH5H4cSwJondd7p6"
     },
     celebration: {
-      date: "Sábado 11 de Enero, 2025", 
-      time: "3:00 PM",
-      location: "Salón de Gala Esmeralda",
-      address: "Jardines de la Hacienda, Sector Elegante"
+      date: "Sábado 20 de Septiembre, 2025",
+      time: "2:00 PM",
+      location: "Quinta Marmolejo Quintanar",
+      address: "Loma del Progreso, Nopala de Villagrán",
+      locationLink: "https://maps.app.goo.gl/SNWa1YtWhwV7RjoG6"
     },
-    dressCode: "Vestidos elegantes con vuelo, faldas coloridas, accesorios florales y zapatos cómodos. Inspiración escaramuza charra adaptada para niños.",
-    restrictions: "Ambiente familiar - ropa cómoda recomendada para actividades ecuestres de los pequeños"
+    dressCode: "Vestidos con vuelo, faldas coloridas, accesorios florales y zapatos cómodos.",
+    restrictions: "Ambiente familiar - ropa cómoda recomendada para actividades de los pequeños"
   },
 
   // Cronograma escaramuza elegante
