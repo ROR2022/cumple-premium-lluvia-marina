@@ -143,10 +143,7 @@ export function BasicCountdown({ data }: BasicCountdownProps) {
           <p className="font-great-vibes text-2xl xs:text-3xl sm:text-3xl md:text-4xl text-[var(--charra-magenta)] font-bold mb-4 leading-relaxed">
             🌹 ¡La pequeña princesa celebra su día especial! 🏇
           </p>
-          <p className="font-playfair text-lg sm:text-xl text-[var(--charra-blush)] leading-relaxed">
-            Prepárate para una celebración llena de tradición y momentos
-            inolvidables
-          </p>
+          
         </div>
       </div>
     </section>
