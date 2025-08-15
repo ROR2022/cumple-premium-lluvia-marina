@@ -94,20 +94,16 @@ export const lluviaMariaEscaramuzaData = {
   // Galería escaramuza elegante
   gallery: {
     title: "Galería de la Pequeña Princesa",
-    description: "Momentos de nuestra celebración",
+    description: "Algunos Momentos Fotogénicos",
     categories: [
-      {
-        name: "Llegada",
-        images: [
-          "/images/custom/niña_1.jpeg",
-          "/images/custom/niña_2.jpeg"
-        ]
-      },
       {
         name: "Aventuras",
         images: [
-          "/images/custom/niña_3.jpeg",
-          "/images/custom/niña_4.jpeg"
+          "/images/custom/festejada_1.jpg",
+          "/images/custom/festejada_2.jpg",
+          "/images/custom/festejada_3.jpg",
+          "/images/custom/festejada_4.jpg",
+          "/images/custom/festejada_5.jpg"
         ]
       }
     ]

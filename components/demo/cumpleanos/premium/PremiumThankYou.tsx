@@ -85,7 +85,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
             </div>
 
             {/* Agradecimientos específicos */}
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
               <div className="rounded-xl p-6 border-2" 
               style={{ 
                 display: 'none',
@@ -102,7 +102,8 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
                 </p>
               </div>
               
-              <div className="rounded-xl p-6 border-2" style={{ 
+              <div className="rounded-xl p-6 border-2" style={{
+                maxWidth: '250px',
                 background: 'var(--charra-gradient-accent)', 
                 borderColor: 'var(--charra-highlight)' 
               }}>
@@ -117,6 +118,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
               </div>
               
               <div className="rounded-xl p-6 border-2" style={{ 
+                maxWidth: '250px',
                 background: 'var(--charra-gradient-background)', 
                 borderColor: 'var(--charra-accent)' 
               }}>
@@ -131,6 +133,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
               </div>
               
               <div className="rounded-xl p-6 border-2" style={{ 
+                maxWidth: '250px',
                 background: 'var(--charra-background)', 
                 borderColor: 'var(--charra-accent)' 
               }}>

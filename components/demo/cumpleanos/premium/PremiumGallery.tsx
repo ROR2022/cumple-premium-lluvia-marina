@@ -166,11 +166,9 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
           <div className="charra-bg-secondary rounded-2xl p-8 text-white max-w-3xl mx-auto charra-shadow-primary">
             <h3 className="font-tangerine drop-shadow-[4px_4px_8px_rgba(0,0,0,0.9)] [text-shadow:_3px_3px_6px_rgb(0_0_0_/_100%),_-1px_-1px_2px_rgb(0_0_0_/_80%)] text-4xl md:text-5xl font-bold mb-4 flex items-center justify-center text-[var(--charra-magenta)]">
               <span className="text-3xl mr-3">📸</span>
-              ¡Momentos Inolvidables de Lluvia Marina!
+              ¡Momentos Fotogénicos de Lluvia Marina!
             </h3>
-            <p className="font-playfair text-xl mb-4 text-[var(--charra-blush)]">
-              Cada recuerdo especial de nuestra celebración
-            </p>
+           
             <div className="flex justify-center space-x-4">
               <LluviaDecoration type="rueda1" size="md" animation="bounce" />
               <LluviaDecoration type="rueda2" size="md" animation="pulse" />
@@ -224,7 +222,7 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
                 {selectedCategory.name} - Imagen {selectedImageIndex + 1} de {selectedCategory.images.length}
               </p>
               <p className="font-playfair text-base opacity-80 text-[var(--charra-blush)]">
-                Momentos elegantes de la tradición ecuestre
+                Momentos inolvidables.
               </p>
             </div>
           </div>
