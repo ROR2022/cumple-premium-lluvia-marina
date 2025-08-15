@@ -149,7 +149,7 @@ export const lluviaMariaEscaramuzaData = {
 
   // Cuenta regresiva elegante
   countdown: {
-    targetDate: "January 11, 2025 14:00:00",
+    targetDate: "September 20, 2025 12:00:00",
     backgroundImage: "/images/custom/lluvia_horse1.jpg"
   },
 

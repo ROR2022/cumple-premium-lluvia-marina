@@ -111,7 +111,7 @@ export function BasicCountdown({ data }: BasicCountdownProps) {
             🕐 ¡CUENTA REGRESIVA!
           </h2>
           <p className="font-great-vibes drop-shadow-[4px_4px_8px_rgba(0,0,0,0.9)] [text-shadow:_3px_3px_6px_rgb(0_0_0_/_100%),_-1px_-1px_2px_rgb(0_0_0_/_80%)] text-xl xs:text-2xl sm:text-2xl md:text-3xl text-[var(--charra-blush)] font-bold leading-relaxed px-2">
-            ¡Faltan pocos días para la celebración de Lluvia Marina!
+            ¡Prepárate para una celebración llena de momentos inolvidables!
           </p>
         </div>
 
