@@ -39,9 +39,9 @@ const eventInfo = {
 };
 
 const contactInfo = {
-  phone: "5556789012",
-  whatsapp: "5556789012",
-  deadline: "8 de Enero, 2025"
+  phone: "4271848975",
+  whatsapp: "524271848975", // +52 (México) + número sin el primer 0
+  deadline: "19 de Septiembre, 2025"
 };
 
 export function BasicAttendance({ attendance }: BasicAttendanceProps) {
