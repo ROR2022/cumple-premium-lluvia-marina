@@ -262,7 +262,7 @@ export function PremiumInvitation({ data }: PremiumInvitationProps) {
                 className="text-2xl font-bold mb-6"
                 style={{ color: "var(--charra-primary)" }}
               >
-                ✨ Padrinos especiales de esta moderna celebración:
+                ✨ Padrinos:
               </h5>
               <div className="grid md:grid-cols-2 gap-6">
                 <div

@@ -14,12 +14,12 @@ export const lluviaMariaEscaramuzaData = {
       birthDate: "19 de Septiembre de 2022"
     },
     parents: {
-      father: "Roberto Rodríguez",
-      mother: "Carmen Marina López"  
+      father: "Adelaido Marmolejo Trejo",
+      mother: "Karina Quintanar Jimenez"  
     },
     padrinos: {
-      padrino: "Miguel Ángel Torres",
-      madrina: "Ana Isabel Martínez"
+      padrino: "Donovan Macías Santos",
+      madrina: "Edith Quijada Pérez"
     },
     ceremony: {
       date: "Sábado 11 de Enero, 2025",
