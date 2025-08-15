@@ -29,11 +29,12 @@ interface BasicAttendanceProps {
 
 // Datos del evento (hardcodeados para este componente)
 const eventInfo = {
-  date: "Sábado 11 de Enero, 2025",
-  time: "2:00 PM",
+  date: "Sábado 20 de Septiembre, 2025",
+  time: "12:00 PM",
   location: {
-    name: "Hacienda de las Rosas",
-    address: "Camino de las Flores Km 12, Valle Encantado"
+    name: "Parroquia de San Juan Bautista",
+    address: "Manzana 006, 54274 San Juan Acazuchitlán, Méx.",
+    locationLink: "https://maps.app.goo.gl/SDH5H4cSwJondd7p6"
   }
 };
 
@@ -92,6 +93,10 @@ ${formData.message || 'Sin mensaje adicional'}
       message: '',
       companions: ''
     });
+  };
+
+  const handleMaps = () => {
+    window.open(eventInfo.location.locationLink, '_blank');
   };
 
   return (
@@ -234,7 +239,10 @@ ${formData.message || 'Sin mensaje adicional'}
                   <div>
                     <strong>⏰ Hora:</strong> {eventInfo.time}
                   </div>
-                  <div>
+                  <div
+                    onClick={handleMaps}
+                    className="cursor-pointer"
+                  >
                     <strong>📍 Lugar:</strong> {eventInfo.location.name}
                     <br />
                     <span className="text-xs sm:text-sm break-words">{eventInfo.location.address}</span>

@@ -120,15 +120,17 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
             ))}
           </div>
         </div>
-
+<p className="text-center text-sm text-white my-2">Click en la imagen para ampliarla</p>
         {/* Grid de imágenes elegante */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-full md:max-w-6xl mx-auto px-2 md:px-0">
+          
           {selectedCategory.images.map((image: string, index: number) => (
             <div
               key={index}
               className="relative group cursor-pointer overflow-hidden rounded-2xl transform hover:scale-105 transition-all duration-300 border border-[var(--charra-magenta)]/20 hover:border-[var(--charra-magenta)]/60 charra-shadow-primary"
               onClick={() => openModal(index)}
             >
+              
               <Image
                 src={image}
                 alt={`${selectedCategory.name} ${index + 1}`}
