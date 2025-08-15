@@ -55,7 +55,7 @@ export function PremiumHero({ data }: PremiumHeroProps) {
           </div>
           
           {/* Título principal con máxima visibilidad */}
-          <div className="relative">
+          <div className="relative pt-8">
             {/* Fondo oscuro para contraste */}
             <div className="absolute inset-0 bg-black/50 rounded-2xl blur-lg"></div>
             <h1 className="relative font-tangerine text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold mb-6 leading-relaxed py-3 px-2">
