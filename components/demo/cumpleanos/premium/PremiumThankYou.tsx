@@ -46,7 +46,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
             ✨ ¡GRACIAS INFINITAS! ✨
           </h2>
           <p className="font-playfair text-xl max-w-3xl mx-auto" style={{ color: 'var(--charra-secondary)' }}>
-            Desde el corazón de nuestra pequeña princesa y toda la familia moderna
+            Desde el corazón de nuestra pequeña princesa y toda la familia
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
                 Mensaje directo de la pequeña {eventData.celebrant?.name || "Lluvia Marina"}:
               </h4>
               <p className="font-playfair text-lg italic leading-relaxed mb-4" style={{ color: 'var(--charra-secondary)' }}>
-                &ldquo;¡Hola, mis queridos invitados elegantes! � 
+                &ldquo;¡Hola, mis queridos invitados! � 
                 Ha sido la celebración más hermosa de mi vida compartir mis 3 añitos con todos ustedes. 
                 Cada abrazo, cada sonrisa, cada momento de alegría... ¡todo fue perfecto! 
                 Gracias por hacer de mi día el más especial con tanto estilo y amor. 
@@ -152,7 +152,8 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
 
         {/* Mensaje de los padres */}
         <div className="rounded-2xl p-8 text-white text-center mb-12" style={{ background: 'var(--charra-gradient-primary)' }}>
-          <h4 className="font-tangerine text-4xl md:text-5xl font-bold mb-6">💌 Palabras de los padres</h4>
+          <h4 className="font-tangerine text-4xl md:text-5xl font-bold mb-6">
+            💌 Palabras de los padres</h4>
           <div className="max-w-3xl mx-auto">
             <p className="font-playfair text-lg text-pink-100 leading-relaxed mb-6">
               Como padres, vemos en los ojos de {eventData.celebrant?.name || "Lluvia Marina"} la felicidad pura que ustedes 
@@ -161,7 +162,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
             </p>
             <div className="bg-white/20 rounded-xl p-6">
               <p className="font-playfair text-pink-100 italic">
-                &ldquo;Gracias por ser parte de la historia de nuestra pequeña amazona, 
+                &ldquo;Gracias por ser parte de la historia de nuestra pequeña princesa, 
                 por amarla como nosotros la amamos, y por hacer que sus primeros años 
                 estén llenos de personas maravillosas como ustedes.&rdquo;
               </p>
@@ -206,10 +207,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
 
           <div className="bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl p-6">
             <p className="font-playfair text-xl font-bold text-pink-800 mb-2">
-              🐎 &ldquo;En la elegante tradición de Lluvia Marina, 
-            </p>
-            <p className="font-playfair text-xl font-bold text-pink-800">
-              los amigos como ustedes son tesoros para toda la vida&rdquo; ✨
+              🐎 &ldquo;En esta tan esperada celebración de lluvia marina los amigos como ustedes son tesoros para toda la vida&rdquo; ✨
             </p>
           </div>
         </div>
