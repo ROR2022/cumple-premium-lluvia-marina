@@ -54,7 +54,7 @@ export default function LandingPage() {
         <BasicAttendance attendance={lluviaMariaEscaramuzaData.attendance} />
 
          {/* CTA - Sección de llamada a la acción premium */}
-        <div className="mt-8 relative overflow-hidden bg-gradient-to-br from-pink-800 via-pink-700 to-purple-800 rounded-3xl p-8 md:p-12 mb-8 shadow-2xl">
+        <div className="mt-8 relative overflow-hidden bg-pink-500 bg-opacity-45 rounded-3xl p-8 md:p-12 mb-8 shadow-2xl">
           {/* Efectos de fondo decorativos */}
           <div className="absolute inset-0 opacity-10">
             <FloatingLluviaDecoration 
@@ -83,19 +83,21 @@ export default function LandingPage() {
           {/* Contenido principal */}
           <div className="relative z-10 text-center text-white">
             {/* Icono principal */}
-            <div className="flex justify-center mb-6">
+            <div 
+            style={{display:'none'}}
+            className="flex justify-center mb-6">
               <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 border-2 border-white/30">
                 <Heart className="w-8 h-8 text-pink-100" />
               </div>
             </div>
             
             {/* Título principal */}
-            <h3 className="font-normal text-3xl md:text-4xl  mb-4 text-pink-50">
+            <h3 className="font-normal text-xl md:text-xl  mb-4 text-pink-50">
               {premiumDemoData.thankYou.footer.cta.question}
             </h3>
             
             {/* Descripción */}
-            <p className="font-playfair text-lg md:text-xl mb-8 text-pink-100 leading-relaxed max-w-2xl mx-auto">
+            <p className="font-playfair text-normal mb-8 text-pink-100 leading-relaxed max-w-2xl mx-auto">
               {premiumDemoData.thankYou.footer.cta.action}
             </p>
             
@@ -103,18 +105,13 @@ export default function LandingPage() {
             <div className="space-y-4">
               <a
                 href={premiumDemoData.thankYou.footer.cta.link}
-                className="group inline-flex items-center gap-3 bg-white text-pink-800 px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:bg-pink-50"
+                className="group inline-flex items-center gap-3 bg-white text-pink-300 px-8 py-4 rounded-2xl font-bold text-sm shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:bg-pink-50"
               >
                 <span>{premiumDemoData.thankYou.footer.cta.linkText}</span>
                 <Heart className="w-5 h-5 group-hover:animate-pulse" />
               </a>
               
-              {/* Línea decorativa */}
-              <div className="flex items-center justify-center gap-4 mt-6">
-                <div className="h-px bg-white/30 flex-1 max-w-20"></div>
-                <span className="text-pink-100 text-sm">🌟 Elegancia 🌟</span>
-                <div className="h-px bg-white/30 flex-1 max-w-20"></div>
-              </div>
+              
             </div>
           </div>
           
