@@ -105,7 +105,8 @@ export const lluviaMariaEscaramuzaData = {
           "/images/custom/festejada_4.jpg",
           "/images/custom/festejada_5.jpg",
           "/images/custom/festejada_6.jpg",
-          "/images/custom/festejada_7.jpg"
+          "/images/custom/festejada_7.jpg",
+          "/images/custom/festejada_8.jpg"
         ]
       }
     ]
