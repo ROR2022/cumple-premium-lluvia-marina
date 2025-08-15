@@ -31,7 +31,7 @@ export const lluviaMariaEscaramuzaData = {
     celebration: {
       date: "Sábado 20 de Septiembre, 2025",
       time: "2:00 PM",
-      location: "Quinta Marmolejo Quintanar",
+      location: "Finca Marmolejo Quintanar",
       address: "Loma del Progreso, Nopala de Villagrán",
       locationLink: "https://maps.app.goo.gl/SNWa1YtWhwV7RjoG6"
     },
