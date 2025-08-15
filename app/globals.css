@@ -5,17 +5,84 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fuentes cursivas para invitaciones */
+/* Prevención de overflow horizontal global */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fuentes cursivas para invitaciones con mejoras para móviles */
 .font-tangerine {
   font-family: 'Tangerine', cursive;
+  line-height: 1.3; /* Mejor line-height para evitar recortes */
+  letter-spacing: 0.02em; /* Espaciado ligero para mejor legibilidad */
 }
 
 .font-great-vibes {
   font-family: 'Great Vibes', cursive;
+  line-height: 1.4; /* Line-height más generoso para descendentes */
+  letter-spacing: 0.01em;
 }
 
 .font-playfair {
   font-family: 'Playfair Display', serif;
+  line-height: 1.5; /* Line-height estándar para serif */
+}
+
+/* Utilidades para mejor legibilidad de títulos */
+.text-shadow-strong {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+               1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+.gradient-text-fallback {
+  background: linear-gradient(45deg, #8B5CF6, #EC4899, #F97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-fallback:hover {
+  -webkit-text-fill-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Utilidades para texto cursivo en móviles */
+.cursive-mobile-safe {
+  /* Padding adicional para evitar recortes */
+  padding: 0.25rem 0.5rem;
+  /* Mínimo height para letras con descendentes */
+  min-height: 1.5em;
+  /* Box sizing para incluir padding en cálculos */
+  box-sizing: content-box;
+}
+
+.cursive-title-mobile {
+  /* Line height específico para títulos cursivos */
+  line-height: 1.2;
+  /* Espaciado vertical para ascendentes/descendentes */
+  padding: 0.75rem 0;
+  /* Evitar que el texto se desborde */
+  overflow: visible;
+  /* Display block para mejor control */
+  display: block;
+}
+
+.cursive-subtitle-mobile {
+  /* Line height para subtítulos cursivos */
+  line-height: 1.3;
+  /* Padding vertical más generoso */
+  padding: 0.5rem 0;
+  /* Margen para separación */
+  margin: 0.5rem 0;
 }
 
 /* Fuentes específicas para páginas de invitaciones */

@@ -3,7 +3,7 @@ export const lluviaMariaEscaramuzaData = {
   hero: {
     name: "Lluvia Marina",
     subtitle: "¡La pequeña princesa más elegante del rancho!",
-    backgroundImage: "/images/custom/lluvia_portada.jpg" // Temporal, cambiar después
+    backgroundImage: "/images/custom/lluvia_portada2.png" // Temporal, cambiar después
   },
 
   // Event information refinada

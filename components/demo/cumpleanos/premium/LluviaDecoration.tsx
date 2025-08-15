@@ -86,9 +86,10 @@ export function FloatingLluviaDecoration({
 }: FloatingLluviaDecorationProps) {
   return (
     <div className={cn(
-      'absolute', 
+      'absolute pointer-events-none', 
       position,
-      hideOnMobile ? 'hidden md:block' : ''
+      hideOnMobile ? 'hidden lg:block' : '',
+      'max-w-full max-h-full'
     )}>
       <LluviaDecoration {...props} />
     </div>

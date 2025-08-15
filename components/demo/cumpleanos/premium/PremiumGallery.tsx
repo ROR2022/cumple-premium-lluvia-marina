@@ -79,8 +79,8 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
   }
 
   return (
-    <section className="charra-bg-hero py-16">
-      <div className="container mx-auto px-4">
+    <section className="charra-bg-hero py-16 overflow-x-hidden">
+      <div className="container mx-auto px-4 overflow-x-hidden">
         {/* Título elegante */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center space-x-3 mb-4">
@@ -122,7 +122,7 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
         </div>
 
         {/* Grid de imágenes elegante */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-full md:max-w-6xl mx-auto px-2 md:px-0">
           {selectedCategory.images.map((image: string, index: number) => (
             <div
               key={index}
@@ -164,7 +164,7 @@ export function PremiumGallery({ data }: PremiumGalleryProps) {
         {/* Información adicional elegante */}
         <div className="mt-12 text-center">
           <div className="charra-bg-secondary rounded-2xl p-8 text-white max-w-3xl mx-auto charra-shadow-primary">
-            <h3 className="font-tangerine text-4xl md:text-5xl font-bold mb-4 flex items-center justify-center text-[var(--charra-magenta)]">
+            <h3 className="font-tangerine drop-shadow-[4px_4px_8px_rgba(0,0,0,0.9)] [text-shadow:_3px_3px_6px_rgb(0_0_0_/_100%),_-1px_-1px_2px_rgb(0_0_0_/_80%)] text-4xl md:text-5xl font-bold mb-4 flex items-center justify-center text-[var(--charra-magenta)]">
               <span className="text-3xl mr-3">📸</span>
               ¡Momentos Inolvidables de Lluvia Marina!
             </h3>
