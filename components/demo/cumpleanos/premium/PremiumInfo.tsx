@@ -395,7 +395,7 @@ export function PremiumInfo({ data }: PremiumInfoProps) {
               className="font-playfair text-lg italic leading-relaxed"
               style={{ color: "var(--charra-secondary)" }}
             >
-              &ldquo;¡Hola, queridos invitados! � Esta pequeña princesa está muy 
+              &ldquo;¡Hola, queridos invitados!  Esta pequeña princesa está muy 
               emocionada de compartir 
               su celebración del tercer año con todos ustedes. 
               ¡Vengan y prepárense para una fiesta llena de diversión! 
