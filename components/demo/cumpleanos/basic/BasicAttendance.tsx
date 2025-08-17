@@ -68,7 +68,6 @@ export function BasicAttendance({ attendance }: BasicAttendanceProps) {
 👤 Nombre: ${formData.name}
 📱 Teléfono: ${formData.phone}
 ✅ Asistencia: ${formData.attendance}
-👥 Acompañantes: ${formData.companions || 'Ninguno'}
 
 💌 *Mensaje especial:*
 ${formData.message || 'Sin mensaje adicional'}
