@@ -75,7 +75,7 @@ export function PremiumThankYou({ data }: PremiumThankYouProps) {
                 Mensaje directo de la pequeña {eventData.celebrant?.name || "Lluvia Marina"}:
               </h4>
               <p className="font-playfair text-lg italic leading-relaxed mb-4" style={{ color: 'var(--charra-secondary)' }}>
-                &ldquo;¡Hola, mis queridos invitados! � 
+                &ldquo;¡Hola, mis queridos invitados! 
                 Ha sido la celebración más hermosa de mi vida compartir mis 3 añitos con todos ustedes. 
                 Cada abrazo, cada sonrisa, cada momento de alegría... ¡todo fue perfecto! 
                 Gracias por hacer de mi día el más especial con tanto estilo y amor. 
